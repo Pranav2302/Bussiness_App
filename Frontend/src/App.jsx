@@ -5,8 +5,10 @@ import "./App.css";
 // Import components
 import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
-import WhatsAppButton from "./components/WhatsAppButton"; // Import the WhatsApp button
-import { VideoPopup } from "../src/components/VideoPopup"; // Import the VideoPopup component
+import WhatsAppButton from "./components/WhatsAppButton";
+import { VideoPopup } from "./components/VideoPopup";
+import ChatComponent from "./components/SendbirdChat"; // Updated import
+import { sendbirdConfig } from "./config/sendbird";
 
 // Import pages
 import Home from "./pages/Home";
@@ -18,12 +20,14 @@ import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
 
 function App() {
+  // Generate a random user ID for anonymous chat or use a logged-in user's ID
+  const userId = `user_${Math.random().toString(36).substr(2, 9)}`;
+
   return (
     <BrowserRouter>
       <div className="bg-white min-h-screen flex flex-col">
         <NavbarComponent />
         <main className="flex-grow pt-24">
-          {/* Padding for floating navbar */}
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/aboutus" element={<Aboutus />} />
@@ -35,8 +39,15 @@ function App() {
           </Routes>
         </main>
         <Footer />
-          {/* Add the VideoPopup component */}
-          <VideoPopup />
+        {/* Add the VideoPopup component */}
+        <VideoPopup />
+        {/* Add the Chat component */}
+        <ChatComponent 
+          appId={sendbirdConfig.appId || '9EF2CDDF-4BA9-4EBE-A4D6-368DFE747047'} // Fallback to hardcoded ID if needed
+          apiToken={sendbirdConfig.apiToken}
+          userId={userId}
+          nickname="Website Visitor"
+        />
         {/* WhatsApp Button - appears on all pages */}
         <WhatsAppButton 
           phoneNumber="+919922990829" 
