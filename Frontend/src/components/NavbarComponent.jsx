@@ -1,39 +1,34 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import {
-  motion,
-  AnimatePresence,
-} from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 import LOGO from "../assets/BRISKWELL_INTERNATION.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
 // Navigation items
-const NavLinks = React.memo(
-  ({ items, location, hovered, setHovered }) => {
-    return items.map((item, idx) => (
-      <Link
-        key={`link-${idx}`}
-        to={item.link}
-        onMouseEnter={() => setHovered(idx)}
-        onMouseLeave={() => setHovered(null)}
-        className={`relative px-4 py-3 font-body font-medium transition-colors ${
-          location.pathname === item.link
-            ? "text-black font-semibold"
-            : "text-black hover:text-black"
-        }`}
-      >
-        {(location.pathname === item.link || hovered === idx) && (
-          <motion.div
-            layoutId="navbar-indicator"
-            className="absolute inset-0 -z-10 h-full w-full rounded-md bg-gray-200"
-          />
-        )}
-        <span className="relative z-10">{item.name}</span>
-      </Link>
-    ));
-  }
-);
+const NavLinks = React.memo(({ items, location, hovered, setHovered }) => {
+  return items.map((item, idx) => (
+    <Link
+      key={`link-${idx}`}
+      to={item.link}
+      onMouseEnter={() => setHovered(idx)}
+      onMouseLeave={() => setHovered(null)}
+      className={`relative px-4 py-2 font-body font-medium transition-all duration-300 ${
+        location.pathname === item.link
+          ? "text-black font-semibold border-2 border-spice-primary rounded-md"
+          : "text-black hover:text-black"
+      }`}
+    >
+      {(location.pathname === item.link || hovered === idx) && (
+        <motion.div
+          layoutId="navbar-indicator"
+          className="absolute inset-0 -z-10 h-full w-full rounded-md bg-gray-100"
+        />
+      )}
+      <span className="relative z-10">{item.name}</span>
+    </Link>
+  ));
+});
 
 export default function NavbarComponent() {
   const ref = useRef(null);
@@ -68,7 +63,7 @@ export default function NavbarComponent() {
       {/* Desktop Navigation - Full width with no side spacing */}
       <div className="w-full bg-white shadow-md">
         <div className="w-full px-6">
-          <div className="hidden lg:flex justify-between items-center h-20">
+          <div className="hidden lg:flex justify-between items-center h-24">
             <Link to="/" className="flex items-center z-20 relative">
               <img
                 src={LOGO}

@@ -24,13 +24,13 @@ const WorldMapDemo = lazy(() => import("./WorldMap"));
 // Cloudinary hero images array
 const heroImages = [
   // Commented photo references
-  // bgImage1,
-  // bgImage2,
-  // bgImage3,
-  // bgImage4,
+  bgImage1,
+  bgImage2,
+  bgImage3,
+  bgImage4,
 
   // Video URL
-  "https://res.cloudinary.com/doxrnqdwn/video/upload/v1745218292/Business_App/ease2vezsgbdccfhws1g.mp4",
+  // "https://res.cloudinary.com/doxrnqdwn/video/upload/v1745218292/Business_App/ease2vezsgbdccfhws1g.mp4",
 ];
 
 export default function Home() {
@@ -215,7 +215,7 @@ export default function Home() {
             >
               <Link
                 to="/products"
-                className="rounded-md bg-gradient-to-b from-spice-primary to-spice-accent hover:shadow-blue-glow hover:-translate-y-0.5 px-8 py-3 font-body font-medium text-white transition-all shadow-md"
+                className="rounded-md bg-gradient-to-b from-spice-primary to-spice-accent hover:shadow-white-glow hover:-translate-y-0.5 px-8 py-3 font-body font-medium text-white-50 transition-all shadow-md"
               >
                 {t("hero.cta.explore")}
               </Link>

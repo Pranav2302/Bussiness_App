@@ -134,7 +134,7 @@ export default function Products() {
     },
     {
       id: 10,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745319118/Business_App/w1oxw5jcdx3xxqyfmp2o.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393939/Business_App/jnjgh2gdsti9fwt6c8sf.jpg",
       alt: "Pomegranate",
       title: "Pomegranate",
       description:
@@ -224,7 +224,7 @@ export default function Products() {
     },
     {
       id: 20,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323111/Business_App/zqiueou8zptpgrwsuene.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393728/Business_App/umgxua9cfofvwptpclzm.jpg",
       alt: "Masoor Dal",
       title: "Masoor Dal",
       description:
@@ -233,24 +233,15 @@ export default function Products() {
     },
     {
       id: 21,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323379/Business_App/pkh83vvwsh9qcdhsc0og.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393807/Business_App/g8gnc61vojlotk7h5fyw.jpg",
       alt: "Onion",
       title: "Onions",
       description:
         "Onions add bold flavor and natural sweetness to dishes, while providing antioxidants and essential nutrients.",
       category: "vegetables",
     },
-    // {
-    //   id: 22,
-    //   src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303064/Business_App/jurejtucymmfjpiy8ypk.jpg",
-    //   alt: "White Onion",
-    //   title: "White Onions",
-    //   description:
-    //     "Premium white onions known for their mild flavor and versatility in cooking.",
-    //   category: "vegetables",
-    // },
     {
-      id: 23,
+      id: 22,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323579/Business_App/ikso0bvnxr2bx0auctz8.jpg",
       alt: "Bajra",
       title: "Bajra Millet",
@@ -259,7 +250,7 @@ export default function Products() {
       category: "grains",
     },
     {
-      id: 24,
+      id: 23,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745384513/Business_App/mammqavo8qvtcoi3g4kx.jpg",
       alt: "Egg Shell Powder",
       title: "Egg Shell Powder",
