@@ -345,14 +345,14 @@ ${formData.message}
             
             <div>
               <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.emailTitle')}</h3>
-              <a href="mailto:info@briskwell.com" className="text-spice-primary hover:text-spice-secondary transition-colors">
+              <a href="mailto:info@briskwellinternational.com" className="text-spice-primary hover:text-spice-secondary transition-colors">
                 {t('contactUs.info.emailAddress')}
               </a>
             </div>
             
             <div>
               <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.phoneTitle')}</h3>
-              <a href="tel:+911234567890" className="text-spice-primary hover:text-spice-secondary transition-colors">
+              <a href="tel:+919922990892" className="text-spice-primary hover:text-spice-secondary transition-colors">
                 {t('contactUs.info.phoneNumber')}
               </a>
             </div>
