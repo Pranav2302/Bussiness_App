@@ -93,7 +93,7 @@ const AboutUs = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744910528/Business_App/ibrgbge0wnlpuk3ahgip.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
             alt="Port Operations"
             className="w-full h-full object-cover object-center"
           />

@@ -21,6 +21,7 @@ export default function Products() {
     { id: "grains", label: t("products.filters.grains") },
     { id: "vegetables", label: t("products.filters.vegetables") },
     { id: "fruits", label: t("products.filters.fruits") },
+    { id: "feed-material", label: t("products.filters.feed-material") },
   ];
 
   const [activeCategory, setActiveCategory] = useState(initialCategory);
@@ -113,23 +114,23 @@ export default function Products() {
         "Complex aromatic spice blend featuring cardamom, cinnamon, cloves, and other warming spices for curries and gravies.",
       category: "Indian spices",
     },
-    // {
-    //   id: 8,
-    //   src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744902594/Business_App/or7euhpp5qbzu8ujhfaf.jpg",
-    //   alt: "Black Cardamom (Kali Ilayachi)",
-    //   title: "Black Cardamom (Kali Ilayachi)",
-    //   description:
-    //     "Smoky, robust pods used in savory dishes, biryanis, and slow-cooked meat preparations.",
-    //   category: "spices",
-    // },
+    {
+      id: 8,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387420/Business_App/gykdmtdgvc8rpzgo2jwp.png",
+      alt: "Rapeseed Meal",
+      title: "Rapeseed Meal",
+      description:
+        "Rapeseed Meal is a protein-rich byproduct left after oil is extracted from rapeseeds. It's commonly used in animal feed, offering essential nutrients for livestock and poultry.",
+      category: "feed-material",
+    },
     {
       id: 9,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744901446/Business_App/fwhvtrzogvfwsbji6lb0.jpg",
-      alt: "Ginger (Adrak)",
-      title: "Ginger (Adrak)",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745386240/Business_App/todktvzrkmbznrl3s3lr.jpg",
+      alt: "Fish Meal",
+      title: "Fish Meal",
       description:
-        "Fresh, aromatic rhizome with warming properties, essential in countless Indian recipes and medicinal preparations.",
-      category: "Indian spices",
+        "Fish Meal is a high-protein feed ingredient made from dried and ground fish or fish byproducts. It's commonly used in animal and aquaculture feeds to promote healthy growth and nutrition.",
+      category: "feed-material",
     },
     {
       id: 10,
@@ -203,15 +204,15 @@ export default function Products() {
         "Fresh, juicy fruits from across India's diverse growing regions.",
       category: "fruits",
     },
-    // {
-    //   id: 18,
-    //   src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303070/Business_App/zmjjkou75h4w7igsopi8.jpg",
-    //   alt: "Wheat",
-    //   title: "Premium Wheat",
-    //   description:
-    //     "High-quality wheat grain suitable for various culinary applications.",
-    //   category: "grains",
-    // },
+    {
+      id: 18,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387223/Business_App/sz7ts8cwrvspkgpkdr58.jpg",
+      alt: "Soya DOC",
+      title: "Soya DOC",
+      description:
+        "Soya DOC is a high-protein byproduct obtained after extracting oil from soybeans. It's widely used as a nutritious ingredient in animal feed, supporting growth and overall health.",
+      category: "feed-material",
+    },
     {
       id: 19,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323698/Business_App/zdjdbq7lxhg8j1sfq8te.jpg",
@@ -256,6 +257,15 @@ export default function Products() {
       description:
         "Nutritious pearl millet that's a staple in many traditional Indian dishes.",
       category: "grains",
+    },
+    {
+      id: 24,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745384513/Business_App/mammqavo8qvtcoi3g4kx.jpg",
+      alt: "Egg Shell Powder",
+      title: "Egg Shell Powder",
+      description:
+        "Egg Shell Powder is a natural, calcium-rich powder made from finely ground eggshells. It’s used as a dietary supplement, plant fertilizer, and ingredient in DIY health and beauty products.",
+      category: "feed-material",
     },
   ];
 
