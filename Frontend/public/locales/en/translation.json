@@ -240,18 +240,37 @@
     "description": "We export premium Indian commodities to destinations worldwide with a robust supply chain and reliable logistics partners."
   },
   "footer": {
-    "companyDescription": "Premium exporters of fine spices, sugar, and traditional products from India to the world.",
+    "companyDescription": "Premium exporters of fine spices and authentic traditional products from India. Delivering quality, purity, and rich Indian heritage to global markets with a commitment to excellence.",
     "quickLinks": "Quick Links",
-    "products": "Our Products",
-    "productCategories": {
-      "spices": "Spices",
-      "sugar": "Sugar & Jaggery",
-      "rice": "Rice & Grains",
-      "tea": "Tea & Coffee",
-      "pickles": "Pickles & Chutneys"
+    "links": {
+      "home": "Home",
+      "aboutUs": "About Us", 
+      "products": "Products",
+      "certification": "Certifications",
+      "gallery": "Gallery",
+      "contactUs": "Contact Us"
     },
-    "contactUs": "Contact Us",
-    "findUs": "Find us here",
-    "copyright": "© {{year}} Briskwell International. All rights reserved."
+    "contactInfo": {
+      "title": "Contact Information",
+      "office": {
+        "label": "Office Location:",
+        "address": "A602, Lotus Sanskruti, bldg 2, Malawalenager 2, Mukai chowk, Ravet- Kiwale, Pune-412101."
+      },
+      "quote": {
+        "label": "Get a Quote:",
+        "phone": "+91 9922990829"
+      },
+      "email": {
+        "label": "Email:",
+        "primary": "info@briskwellinternational.com",
+        "secondary": "briskwellinternational@gmail.com"
+      }
+    },
+    "location": {
+      "title": "Find us here"
+    },
+    "copyright": "© {{year}} Briskwell International. All rights reserved.",
+    "developer": "Developed with ❤️ by Prajwal Korade-Pranav Kamble",
+    "developerInitials": "PK"
   }
 }

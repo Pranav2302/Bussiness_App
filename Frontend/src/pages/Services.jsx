@@ -48,7 +48,7 @@ const ServiceCard = ({ icon, title, description, className = "" }) => {
         <div className="w-16 h-16 bg-blue-50 rounded-full flex items-center justify-center mb-6 group-hover:bg-blue-100 transition-colors">
           <span className="text-3xl">{icon}</span>
         </div>
-        <h3 className="text-xl font-bold text-spice-primary mb-3">{title}</h3>
+        <h3 className="text-xl font-bold text-spice-primary mb-3 service-heading">{title}</h3>
         <p className="text-spice-text">{description}</p>
       </div>
     </div>
@@ -152,7 +152,7 @@ const AnimatedFeatureService = ({ services, autoplay = false }) => {
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-2xl font-bold text-spice-primary">
+            <h3 className="text-2xl font-bold text-spice-primary service-heading">
               {services[active].title}
             </h3>
             <p className="text-sm text-blue-600 font-medium">
@@ -231,7 +231,7 @@ export default function Services() {
   const featuredServices = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
       alt: "Freight Forwarding",
       title: "Freight Forwarding Solutions",
       category: "Global Logistics",
@@ -241,7 +241,7 @@ export default function Services() {
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg", // Replace with your Cloudinary URL
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg", 
       alt: "Customs Clearance",
       title: "Customs Clearance Expertise",
       category: "Import/Export",
@@ -251,7 +251,7 @@ export default function Services() {
     },
     {
       id: 3,
-      src: "https://images.unsplash.com/photo-1571942676516-0ee76ab39327", // Replace with your Cloudinary URL
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
       alt: "Sea Export",
       title: "Sea Export & Import",
       category: "Ocean Freight",
@@ -275,7 +275,7 @@ export default function Services() {
   const serviceOfferings = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg", // Replace with your Cloudinary URL
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
       alt: "Freight Forwarding",
       title: "Freight Forwarding",
       description:
@@ -344,7 +344,7 @@ export default function Services() {
     },
     {
       id: 5,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745150336/Business_App/ik1tkcygo4ujb7narp3z.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
       alt: "Sea Export/Import",
       title: "Sea Export/Import (FCL/LCL)",
       description:
@@ -589,7 +589,7 @@ export default function Services() {
           </motion.div>
 
           {/* Category Filter */}
-          <div className="flex flex-wrap justify-center  gap-2 md:gap-4 mb-10">
+          <div className="flex flex-wrap justify-center gap-2 md:gap-4 mb-10">
             {serviceCategories.map((category) => (
               <button
                 key={category}
@@ -658,7 +658,7 @@ export default function Services() {
                     )}
 
                     <motion.h3
-                      className="text-xl font-bold text-white"
+                      className="text-xl font-bold text-white service-heading"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.1 }}
@@ -745,7 +745,7 @@ export default function Services() {
                       <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-2xl">
                         {selectedService.icon}
                       </div>
-                      <h3 className="text-2xl font-bold text-spice-primary">
+                      <h3 className="text-2xl font-bold text-spice-primary service-heading">
                         {selectedService.title}
                       </h3>
                     </div>
