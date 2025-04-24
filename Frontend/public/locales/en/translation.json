@@ -49,7 +49,8 @@
       "title": "Discover Our Products",
       "subtitle": "Explore our complete range of premium Indian commodities ready for export",
       "view": "View Details",
-      "spices": "Premium Spices",
+      "spices": "Indian spices",
+      "feed": "feed-material",
       "dal": "Premium Dal",
       "pulses": "Variety of Pulses",
       "vegetables": "Fresh Vegetables",
@@ -57,7 +58,6 @@
       "wheat": "Premium Wheat",
       "jowar": "Jowar Millet",
       "mango": "Premium Mangoes",
-      "sugar": "Refined Sugar",
       "jaggery": "Organic Jaggery",
       "rice": "Basmati Rice"
     },
