@@ -17,11 +17,12 @@ import Certification from "./pages/Certification";
 import Gallery from "./pages/Gallery";
 import Products from "./pages/Products";
 import ContactUs from "./pages/ContactUs";
-
+import PageLoader from "./components/PageLoader";
 function App() {
   return (
     <Router>
       <ScrollToTop />
+      <PageLoader>
       <div className="bg-white min-h-screen flex flex-col">
         <NavbarComponent />
         <main className="flex-grow pt-20">
@@ -45,6 +46,7 @@ function App() {
           message="Hello! I'm interested in your products. Can you provide more information?" 
         />
       </div>
+      </PageLoader>
     </Router>
   );
 }

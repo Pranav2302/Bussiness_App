@@ -112,3 +112,51 @@ img {
   color: #1c2735 !important;
   font-weight: 500;
 }
+/* Home page specific heading styles */
+.home-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e3a5f !important; 
+  font-weight: 600;
+}
+
+/* Page loader animation */
+@keyframes pulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+}
+
+.logo-pulse {
+  animation: pulse 2s infinite;
+}
+
+.loader-progress {
+  position: relative;
+  height: 3px;
+  background-color: #f0f0f0;
+  overflow: hidden;
+  width: 200px;
+  border-radius: 4px;
+}
+
+.loader-progress::after {
+  content: "";
+  position: absolute;
+  left: -50%;
+  height: 100%;
+  width: 50%;
+  background: linear-gradient(135deg, #0066cc, #2d8efd);
+  animation: loading 1.5s infinite;
+}
+
+@keyframes loading {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 100%;
+  }
+}
