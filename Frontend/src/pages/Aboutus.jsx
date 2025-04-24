@@ -33,10 +33,22 @@ const AboutUs = () => {
 
   // Stats data
   const stats = [
-    { number: t("aboutUs.stats.globalPartners.number"), label: t("aboutUs.stats.globalPartners.label") },
-    { number: t("aboutUs.stats.countriesServed.number"), label: t("aboutUs.stats.countriesServed.label") },
-    { number: t("aboutUs.stats.monthlyExport.number"), label: t("aboutUs.stats.monthlyExport.label") },
-    { number: t("aboutUs.stats.farmerNetworks.number"), label: t("aboutUs.stats.farmerNetworks.label") },
+    {
+      number: t("aboutUs.stats.globalPartners.number"),
+      label: t("aboutUs.stats.globalPartners.label"),
+    },
+    {
+      number: t("aboutUs.stats.countriesServed.number"),
+      label: t("aboutUs.stats.countriesServed.label"),
+    },
+    {
+      number: t("aboutUs.stats.monthlyExport.number"),
+      label: t("aboutUs.stats.monthlyExport.label"),
+    },
+    {
+      number: t("aboutUs.stats.farmerNetworks.number"),
+      label: t("aboutUs.stats.farmerNetworks.label"),
+    },
   ];
 
   // Core values data
@@ -94,9 +106,7 @@ const AboutUs = () => {
               {t("aboutUs.hero.tagline")}
             </motion.span>
             <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-white">
-              <span className="text-white-400 ">
-                {t("aboutUs.hero.title")}
-              </span>
+              <span className="text-white-400 ">{t("aboutUs.hero.title")}</span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
               {t("aboutUs.hero.subtitle")}

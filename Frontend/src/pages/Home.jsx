@@ -11,8 +11,6 @@ import bgImage2 from "../assets/background/bg2.jpg";
 import bgImage3 from "../assets/background/bg3.jpg";
 import bgImage4 from "../assets/background/bg4.jpg";
 
-
-
 const WorldMapDemo = lazy(() => import("./WorldMap"));
 
 // Cloudinary hero images array
@@ -22,8 +20,6 @@ const heroImages = [
   bgImage1,
   bgImage3,
   bgImage4,
-
-  
 ];
 
 export default function Home() {
@@ -270,42 +266,40 @@ export default function Home() {
               className="space-y-6"
             >
               <h2 className="font-display text-3xl md:text-4xl font-bold text-spice-primary">
-                About Briskwell International
+                {t("about.title")}
               </h2>
               <div className="space-y-4">
                 <p className="font-body text-lg text-spice-text">
-                  Founded in 2024, Briskwell International is a dynamic global
-                  trading company specializing in the import and export of
-                  high-quality goods across various industries. With a strong
-                  network of reliable partners and suppliers worldwide, we are
-                  committed to delivering excellence, efficiency, and trust in
-                  every transaction.
+                  {t("about.description.part1")}
                 </p>
                 <p className="font-body text-lg text-spice-text">
-                  At Briskwell International, we believe in forging lasting
-                  partnerships and enabling businesses to thrive beyond borders.
-                  Our mission is simple — to make global trade faster, smarter,
-                  and more reliable.
+                  {t("about.description.part2")}
                 </p>
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6">
                 <div className="text-center">
                   <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
-                    50+
+                    {t("about.stats.partners.number")}
                   </h3>
-                  <p className="font-body text-spice-text">Global Partners</p>
+                  <p className="font-body text-spice-text">
+                    {t("about.stats.partners.label")}
+                  </p>
                 </div>
                 <div className="text-center">
                   <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
-                    25+
+                    {t("about.stats.countries.number")}
                   </h3>
-                  <p className="font-body text-spice-text">Countries Served</p>
+                  <p className="font-body text-spice-text">
+                    {t("about.stats.countries.label")}
+                  </p>
                 </div>
                 <div className="text-center">
                   <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
-                    1000+
+                    {t("about.stats.export.number")}
                   </h3>
-                  <p className="font-body text-spice-text">MT Monthly Export</p>
+                  <p className="font-body text-spice-text">
+                    {t("about.stats.export.label")}
+                  </p>
                 </div>
               </div>
               <div className="pt-4">
@@ -313,7 +307,7 @@ export default function Home() {
                   to="/aboutus"
                   className="inline-flex items-center gap-2 px-6 py-3 font-body font-medium text-spice-primary hover:text-spice-secondary transition-colors duration-300 group"
                 >
-                  Learn More About Us
+                  {t("about.learnMore")}
                   <span className="transform group-hover:translate-x-1 transition-transform duration-300">
                     →
                   </span>
@@ -391,7 +385,6 @@ export default function Home() {
           </Link>
         </div>
       </section>
-     
 
       {/* What we do section */}
       <section className="relative py-24 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
@@ -571,11 +564,10 @@ export default function Home() {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="font-display text-3xl md:text-4xl font-bold text-spice-primary mb-4">
-              Our Certifications
+              {t("certifications.title")}
             </h2>
             <p className="font-body text-lg text-gray-600 max-w-2xl mx-auto">
-              We maintain the highest standards of quality and safety with
-              international certifications
+              {t("certifications.description")}
             </p>
           </div>
 
@@ -647,7 +639,7 @@ export default function Home() {
               to="/certification"
               className="inline-flex items-center gap-2 px-6 py-3 font-body font-medium text-spice-primary hover:text-spice-secondary transition-colors duration-300 group"
             >
-              View All Certifications
+              {t("certifications.viewAll")}
               <span className="transform group-hover:translate-x-1 transition-transform duration-300">
                 →
               </span>

@@ -1,20 +1,23 @@
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export const BusinessDetails = () => {
+  const { t } = useTranslation();
+
   const details = [
     {
-      title: "CEO & Founder",
-      value: "Mrs. Reena Gole",
+      title: t("businessDetails.ceoFounder.title"),
+      value: t("businessDetails.ceoFounder.value"),
       icon: "👤",
     },
     {
-      title: "Year of Establishment",
-      value: "2024",
+      title: t("businessDetails.establishment.title"),
+      value: t("businessDetails.establishment.value"),
       icon: "📅",
     },
     {
-      title: "Business Nature",
-      value: "Export & Import",
+      title: t("businessDetails.businessNature.title"),
+      value: t("businessDetails.businessNature.value"),
       icon: "🌐",
     },
   ];

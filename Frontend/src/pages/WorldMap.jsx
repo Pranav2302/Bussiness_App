@@ -1,29 +1,35 @@
 import React, { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 // Lazy load the heavy WorldMap component
 const WorldMap = lazy(() => import("../components/ui/worldmap"));
 
 export default function WorldMapDemo() {
+  const { t } = useTranslation();
   return (
     <div className="bg-white w-full py-20">
       <div className="max-w-7xl mx-auto text-center px-6">
         <p className="font-display text-xl md:text-4xl font-bold text-spice-dark">
-          Global{" "}
-          <span className="text-spice-primary">Distribution</span>
+          {t("worldMap.title.start")}{" "}
+          <span className="text-spice-primary">
+            {t("worldMap.title.highlight")}
+          </span>
         </p>
         <p className="font-body text-sm md:text-lg text-spice-text max-w-2xl mx-auto py-4">
-          We export premium Indian commodities to over 30 countries worldwide. Our robust supply chain ensures timely delivery to all corners of the globe.
+          {t("worldMap.description")}
         </p>
       </div>
-      <Suspense fallback={
-        <div className="aspect-[2/1] w-full max-w-7xl mx-auto bg-gray-100 animate-pulse rounded-lg flex items-center justify-center">
-          <p className="text-gray-500">Loading world map...</p>
-        </div>
-      }>
-        <WorldMap 
+      <Suspense
+        fallback={
+          <div className="aspect-[2/1] w-full max-w-7xl mx-auto bg-gray-100 animate-pulse rounded-lg flex items-center justify-center">
+            <p className="text-gray-500">Loading world map...</p>
+          </div>
+        }
+      >
+        <WorldMap
           forceDarkMode={false}
-          lineColor="#0066cc" 
+          lineColor="#0066cc"
           dots={[
             {
               start: { lat: 20.5937, lng: 78.9629 }, // India
