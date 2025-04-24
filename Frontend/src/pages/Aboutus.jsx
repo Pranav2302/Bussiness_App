@@ -28,8 +28,28 @@ const AboutUs = () => {
     },
   };
 
-  // Timeline data
-  const timeline = t("aboutUs.journey.timeline", { returnObjects: true });
+  // Timeline data with fallback
+  const timeline = t("aboutUs.journey.timeline", { returnObjects: true }) || [
+    {
+      year: "2024",
+      title: "Company Foundation",
+      description:
+        "Established with a vision to bring premium Indian agricultural products to the global market.",
+    },
+    {
+      year: "2024",
+      title: "Market Expansion",
+      description:
+        "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
+      achievement: "ISO 9001:2025 Certified",
+    },
+    {
+      year: "2025",
+      title: "Product Portfolio Growth",
+      description:
+        "Added new product categories and strengthened partnerships with local farmers.",
+    },
+  ];
 
   // Stats data
   const stats = [
@@ -347,19 +367,19 @@ const AboutUs = () => {
             className="grid grid-cols-2 md:grid-cols-4 gap-8"
           >
             {stats.map((stat, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className="text-center p-6 bg-white rounded-xl shadow-card hover:shadow-glossy-hover transition-all"
-              >
-                <h3 className="font-display text-4xl font-bold text-spice-primary">
-                  {stat.number}
-                </h3>
-                <p className="font-body text-spice-text">{stat.label}</p>
-              </motion.div>
+             <motion.div
+             key={index}
+             initial={{ opacity: 0, scale: 0.5 }}
+             whileInView={{ opacity: 1, scale: 1 }}
+             viewport={{ once: true }}
+             transition={{ delay: index * 0.1 }}
+             className="text-center p-6 bg-white rounded-xl shadow-card hover:shadow-glossy-hover transition-all"
+           >
+             <h3 className="stats-number">
+               {stat.number}
+             </h3>
+             <p className="font-body text-spice-text">{stat.label}</p>
+           </motion.div>
             ))}
           </motion.div>
         </div>
@@ -388,58 +408,62 @@ const AboutUs = () => {
               viewport={{ once: true }}
               className="relative z-10 space-y-24"
             >
-              {timeline.map((item, index) => (
-                <motion.div
-                  key={index}
-                  variants={itemVariants}
-                  className={`flex flex-col ${
-                    index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
-                  } items-center gap-8 md:gap-12`}
-                >
-                  {/* Year Bubble */}
-                  <div className="flex-none order-1 md:order-none">
-                    <div className="relative">
-                      <div className="absolute inset-0 bg-spice-primary/20 rounded-full blur-xl transform scale-150" />
-                      <div className="relative flex items-center justify-center w-20 h-20 bg-gradient-to-br from-spice-primary to-blue-600 rounded-full text-white font-bold text-2xl shadow-blue-glow">
-                        {item.year}
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Content Card */}
-                  <motion.div
-                    className={`flex-1 ${
-                      index % 2 === 0 ? "md:text-left" : "md:text-right"
-                    }`}
-                    whileHover={{ scale: 1.02 }}
-                    transition={{ type: "spring", stiffness: 300 }}
-                  >
-                    <div className="relative group">
-                      <div className="relative rounded-2xl border-2 border-blue-100 p-1">
-                        <GlowingEffect spread={30} glow={true} />
-                        <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-card group-hover:shadow-glossy-hover transition-all">
-                          <h3 className="font-display text-2xl font-bold text-spice-primary mb-4">
-                            {item.title}
-                          </h3>
-                          <p className="text-lg text-spice-text leading-relaxed">
-                            {item.description}
-                          </p>
-
-                          {/* Optional Achievement Badge */}
-                          {index === 1 && item.achievement && (
-                            <div className="mt-4 inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
-                              <span className="text-blue-600">🏆</span>
-                              <span className="text-sm font-medium text-blue-600">
-                                {item.achievement}
-                              </span>
-                            </div>
-                          )}
+              {Array.isArray(timeline)
+                ? timeline.map((item, index) => (
+                    <motion.div
+                      key={index}
+                      variants={itemVariants}
+                      className={`flex flex-col ${
+                        index % 2 === 0
+                          ? "md:flex-row"
+                          : "md:flex-row-reverse"
+                      } items-center gap-8 md:gap-12`}
+                    >
+                      {/* Year Bubble */}
+                      <div className="flex-none order-1 md:order-none">
+                        <div className="relative">
+                          <div className="absolute inset-0 bg-spice-primary/20 rounded-full blur-xl transform scale-150" />
+                          <div className="relative flex items-center justify-center w-20 h-20 bg-gradient-to-br from-spice-primary to-blue-600 rounded-full text-white font-bold text-2xl shadow-blue-glow">
+                            {item.year}
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </motion.div>
-                </motion.div>
-              ))}
+
+                      {/* Content Card */}
+                      <motion.div
+                        className={`flex-1 ${
+                          index % 2 === 0 ? "md:text-left" : "md:text-right"
+                        }`}
+                        whileHover={{ scale: 1.02 }}
+                        transition={{ type: "spring", stiffness: 300 }}
+                      >
+                        <div className="relative group">
+                          <div className="relative rounded-2xl border-2 border-blue-100 p-1">
+                            <GlowingEffect spread={30} glow={true} />
+                            <div className="bg-white/80 backdrop-blur-sm p-8 rounded-xl shadow-card group-hover:shadow-glossy-hover transition-all">
+                              <h3 className="font-display text-2xl font-bold text-spice-primary mb-4">
+                                {item.title}
+                              </h3>
+                              <p className="text-lg text-spice-text leading-relaxed">
+                                {item.description}
+                              </p>
+
+                              {/* Optional Achievement Badge */}
+                              {index === 1 && item.achievement && (
+                                <div className="mt-4 inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
+                                  <span className="text-blue-600">🏆</span>
+                                  <span className="text-sm font-medium text-blue-600">
+                                    {item.achievement}
+                                  </span>
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </div>
+                      </motion.div>
+                    </motion.div>
+                  ))
+                : null}
             </motion.div>
           </div>
         </div>

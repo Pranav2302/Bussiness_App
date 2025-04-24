@@ -423,7 +423,7 @@ export default function Services() {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-6xl font-bold text-white mb-6  "
             >
-              {t("services.hero.title")} <span className="text-blue-400">Services</span>
+              {t("services.hero.title")} 
               
             </motion.h1>
             <motion.p
@@ -659,7 +659,7 @@ export default function Services() {
                     )}
 
                     <motion.h3
-                      className="text-xl font-bold text-white service-heading"
+                      className="text-xl font-bold text-white mb-2"
                       initial={{ y: 20, opacity: 0 }}
                       animate={{ y: 0, opacity: 1 }}
                       transition={{ delay: 0.1 }}

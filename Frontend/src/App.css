@@ -124,6 +124,21 @@ img {
   font-weight: 600;
 }
 
+/* Stats counter styling for AboutUs page */
+.stats-number {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e3a5f;  /* Match your spice-primary color */
+  font-weight: 700;
+  font-size: 2.5rem;
+  line-height: 1;
+  background: linear-gradient(135deg, #1e3a5f, #2d8efd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
 /* Page loader animation */
 @keyframes pulse {
   0%, 100% {
