@@ -208,13 +208,13 @@ export default function Home() {
             >
               <Link
                 to="/products"
-                className="rounded-md bg-gradient-to-b from-spice-primary to-spice-accent hover:shadow-white-glow hover:-translate-y-0.5 px-8 py-3 font-body font-medium text-white-50 transition-all shadow-md"
+                className="rounded-md bg-white border border-transparent hover:bg-white/50 hover:shadow-md px-8 py-3 font-body font-medium text-spice-primary transition-all"
               >
                 {t("hero.cta.explore")}
               </Link>
               <Link
                 to="/contactus"
-                className="rounded-md bg-white/90 border border-transparent hover:bg-white hover:shadow-md px-8 py-3 font-body font-medium text-spice-primary transition-all"
+                className="rounded-md bg-white border border-transparent hover:bg-white/50 hover:shadow-md px-8 py-3 font-body font-medium text-spice-primary transition-all"
               >
                 {t("hero.cta.quote")}
               </Link>
@@ -290,19 +290,19 @@ export default function Home() {
               </div>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-6 pt-6">
                 <div className="text-center">
-                  <h3 className="font-display text-3xl font-bold text-spice-primary">
+                  <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
                     50+
                   </h3>
                   <p className="font-body text-spice-text">Global Partners</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-display text-3xl font-bold text-spice-primary">
+                  <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
                     25+
                   </h3>
                   <p className="font-body text-spice-text">Countries Served</p>
                 </div>
                 <div className="text-center">
-                  <h3 className="font-display text-3xl font-bold text-spice-primary">
+                  <h3 className="font-display text-3xl font-bold text-spice-primary home-heading">
                     1000+
                   </h3>
                   <p className="font-body text-spice-text">MT Monthly Export</p>
@@ -447,7 +447,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-gray-900 mb-4 transform group-hover:scale-105 transition-all duration-500">
+                  <h3 className="font-display text-xl font-semibold text-gray-900 mb-4 transform group-hover:scale-105 transition-all duration-500 home-heading">
                     {t("whatWeDo.sourcing.title")}
                   </h3>
                   <p className="font-body text-gray-300 group-hover:text-gray-100 transition-all duration-500">
@@ -474,7 +474,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-white mb-4 transform group-hover:scale-105 transition-all duration-500">
+                  <h3 className="font-display text-xl font-semibold text-white mb-4 transform group-hover:scale-105 transition-all duration-500 home-heading">
                     {t("whatWeDo.quality.title")}
                   </h3>
                   <p className="font-body text-gray-300 group-hover:text-gray-100 transition-all duration-500">
@@ -500,7 +500,7 @@ export default function Home() {
                       className="w-full h-full object-cover"
                     />
                   </div>
-                  <h3 className="font-display text-xl font-semibold text-white mb-4 transform group-hover:scale-105 transition-all duration-500">
+                  <h3 className="font-display text-xl font-semibold text-white mb-4 transform group-hover:scale-105 transition-all duration-500 home-heading">
                     {t("whatWeDo.export.title")}
                   </h3>
                   <p className="font-body text-gray-300 group-hover:text-gray-100 transition-all duration-500">

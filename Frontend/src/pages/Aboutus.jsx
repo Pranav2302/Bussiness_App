@@ -28,29 +28,29 @@ const AboutUs = () => {
   // Timeline data
   const timeline = [
     {
-      year: "2020",
+      year: "2024 ",
       title: "Company Foundation",
       description:
         "Established with a vision to bring premium Indian agricultural products to the global market.",
     },
     {
-      year: "2021",
+      year: "2024",
       title: "Market Expansion",
       description:
-        "Expanded operations to 15+ countries and achieved ISO 9001:2015 certification.",
+        "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
     },
     {
-      year: "2022",
+      year: "2025",
       title: "Product Portfolio Growth",
       description:
         "Added new product categories and strengthened partnerships with local farmers.",
     },
-    {
-      year: "2023",
-      title: "Digital Transformation",
-      description:
-        "Implemented state-of-the-art technology for supply chain management and quality control.",
-    },
+    // {
+    //   year: "2023",
+    //   title: "Digital Transformation",
+    //   description:
+    //     "Implemented state-of-the-art technology for supply chain management and quality control.",
+    // },
   ];
 
   // Stats data
@@ -93,7 +93,7 @@ const AboutUs = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745487635/Business_App/buepoq0z20o2yzzort60.jpg"
             alt="Port Operations"
             className="w-full h-full object-cover object-center"
           />
@@ -112,13 +112,13 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.3 }}
-              className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 mb-6"
+              className="inline-block px-4 py-2 bg-white/40 backdrop-blur-sm rounded-full text-white/90 mb-6"
             >
               Global Trade Excellence
             </motion.span>
             <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-white">
               {/* Who are we ?{" "} */}
-              <span className="text-blue-400 ">
+              <span className="text-white-400 ">
                 About Us {/* Spices specialists for over a decade */}
               </span>
             </h1>
@@ -129,11 +129,11 @@ const AboutUs = () => {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="mt-8 flex gap-4"
+              className="mt-8 flex gap-4 justify-center"
             >
               <Link
                 to="/products"
-                className="px-8 py-3 bg-white/10 backdrop-blur-sm text-white rounded-full 
+                className="px-8 py-3 bg-white/40 backdrop-blur-sm text-white rounded-full 
           hover:bg-white/20 transition-all hover:-translate-y-1 duration-300 "
               >
                 View Products
@@ -452,7 +452,7 @@ const AboutUs = () => {
                             <div className="mt-4 inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
                               <span className="text-blue-600">🏆</span>
                               <span className="text-sm font-medium text-blue-600">
-                                ISO 9001:2015 Certified
+                                ISO 9001:2025 Certified
                               </span>
                             </div>
                           )}

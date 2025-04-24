@@ -41,9 +41,9 @@ export const BusinessDetails = () => {
                 <div className="absolute inset-0 bg-gradient-to-r from-blue-50 to-cyan-50 rounded-xl opacity-0 group-hover:opacity-100 transition-all duration-300" />
                 <div className="relative p-4 text-center">
                   <span className="text-3xl mb-3 block">{detail.icon}</span>
-                  <h3 className="text-spice-text text-sm uppercase tracking-wider mb-2">
+                  <h2 className="text-spice-text text-sm uppercase tracking-wider mb-2">
                     {detail.title}
-                  </h3>
+                  </h2>
                   <p className="text-xl font-bold text-spice-primary">
                     {detail.value}
                   </p>
