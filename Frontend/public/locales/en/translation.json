@@ -86,7 +86,22 @@
     "modal": {
       "inquire": "Inquire About This Product",
       "close": "Close"
-    }
+    },
+    "details": {
+      "qualityAssurance": {
+        "title": "Quality Assurance",
+        "description": "All our products undergo rigorous quality checks"
+      },
+      "origin": {
+        "title": "Origin",
+        "description": "Sourced from premium growing regions in India"
+      },
+      "packaging": {
+        "title": "Packaging",
+        "description": "Available in various packaging options for bulk and retail"
+      }
+    },
+    "inquiry": "Inquiry"
   },
   "loading": {
     "globe": "Loading Global Reach Map...",
@@ -168,7 +183,9 @@
         "seaExportImport": "Sea Export/Import (FCL/LCL)",
         "airExportImport": "Air Export/Import",
         "other": "Other (Specify)"
-      }
+      },
+      "success": "Your message has been sent successfully. We'll get back to you soon!",
+      "error": "There was an error sending your message. Please try again later."
     },
     "info": {
       "title": "Contact Information",
@@ -272,5 +289,297 @@
     "copyright": "© {{year}} Briskwell International. All rights reserved.",
     "developer": "Developed with ❤️ by Prajwal Korade-Pranav Kamble",
     "developerInitials": "PK"
+  },
+  "pageLoader": {
+    "alt": "Briskwell Logo"
+  },
+  "certification": {
+    "title": "Our Accreditations",
+    "subtitle": "Committed to maintaining the highest standards of quality and safety in global trade",
+    "description": "Our commitment to quality is backed by international certifications, ensuring we meet the highest standards in food safety, manufacturing, and quality management.",
+    "certificates": {
+      "iso": {
+        "title": "ISO 9001:2015",
+        "description": "Quality Management System Certification",
+        "additionalInfo": "International Standard for Quality Management",
+        "alt": "ISO 9001:2015"
+      },
+      "haccp": {
+        "title": "HACCP",
+        "description": "Food Safety Management System",
+        "additionalInfo": "Hazard Analysis Critical Control Point",
+        "alt": "HACCP"
+      },
+      "gmp": {
+        "title": "GMP",
+        "description": "Good Manufacturing Practices",
+        "additionalInfo": "Manufacturing Quality Standards",
+        "alt": "GMP"
+      },
+      "fssai": {
+        "title": "FSSAI",
+        "description": "Food Safety and Standards Authority of India",
+        "additionalInfo": "Indian Food Safety Certification",
+        "alt": "FSSAI"
+      },
+      "apeda": {
+        "alt": "APEDA"
+      }
+    }
+  },
+  "services": {
+    "hero": {
+      "tagline": "Global Logistics Partner",
+      "title": "Logistics Services",
+      "description": "From freight forwarding to customs clearance, we offer end-to-end solutions to streamline your global trade operations.",
+      "exploreButton": "Explore Services",
+      "quoteButton": "Request Quote"
+    },
+    "overview": {
+      "tagline": "Our Expertise",
+      "title": "Logistics Solutions",
+      "description": "We offer a complete range of freight forwarding and customs clearance services to simplify your international trade operations."
+    },
+    "serviceCards": {
+      "seaExportImport": {
+        "title": "Sea Export/Import (FCL/LCL)",
+        "description": "Comprehensive ocean freight services for both full container loads and consolidation shipments with competitive rates and reliable scheduling."
+      },
+      "airExportImport": {
+        "title": "Air Export/Import",
+        "description": "Expedited air freight solutions for time-sensitive cargo with flexible scheduling options and specialized handling capabilities."
+      },
+      "customsClearance": {
+        "title": "Customs Clearance",
+        "description": "Expert handling of all customs documentation and regulatory compliance to ensure smooth border crossings and prevent delays."
+      },
+      "freightForwarding": {
+        "title": "Freight Forwarding",
+        "description": "End-to-end logistics solutions with route optimization, carrier selection, and comprehensive cargo management services."
+      },
+      "internationalParcel": {
+        "title": "International Parcel",
+        "description": "Reliable and cost-effective solutions for smaller shipments and parcels with global tracking capabilities and express options."
+      },
+      "exportImportConsultation": {
+        "title": "Export Import Consultation",
+        "description": "Strategic guidance on international trade regulations, market entry strategies, and optimization of your global supply chain."
+      }
+    },
+    "featured": {
+      "title": "Our Featured Services",
+      "items": {
+        "freightForwarding": {
+          "title": "Freight Forwarding Solutions",
+          "category": "Global Logistics",
+          "description": "Our comprehensive freight forwarding services ensure your cargo reaches its destination efficiently and cost-effectively. With our extensive global network, we handle all aspects of your shipping needs from pickup to delivery, providing real-time tracking and customs documentation.",
+          "alt": "Freight Forwarding"
+        },
+        "customsClearance": {
+          "title": "Customs Clearance Expertise",
+          "category": "Import/Export",
+          "description": "Navigate the complexities of international trade with our expert customs clearance services. Our team of licensed customs brokers ensures compliance with all regulations, handles documentation, and manages tariff classifications to facilitate smooth border crossings for your goods.",
+          "alt": "Customs Clearance"
+        },
+        "seaExportImport": {
+          "title": "Sea Export & Import",
+          "category": "Ocean Freight",
+          "description": "Whether you need full container load (FCL) or less than container load (LCL) shipping solutions, our sea freight services connect you to major ports worldwide. We optimize routes, manage carrier relationships, and ensure competitive rates for your ocean logistics needs.",
+          "alt": "Sea Export"
+        },
+        "airExportImport": {
+          "title": "Air Export & Import",
+          "category": "Air Freight",
+          "description": "When time is of the essence, our air freight services provide expedited shipping solutions to and from destinations worldwide. We work with major airlines to secure cargo space, manage special handling requirements, and ensure your time-sensitive shipments arrive on schedule.",
+          "alt": "Air Freight"
+        }
+      }
+    },
+    "detailedServices": {
+      "title": "Explore Our Service Portfolio",
+      "description": "Dive deeper into our comprehensive range of logistics services designed to meet your global shipping requirements.",
+      "categories": {
+        "all": "All",
+        "seaFreight": "Sea Freight",
+        "airFreight": "Air Freight",
+        "customs": "Customs",
+        "consulting": "Consulting"
+      },
+      "clickForDetails": "Click for details",
+      "serviceIncludes": "Service Includes:",
+      "requestQuote": "Request Quote",
+      "close": "Close"
+    },
+    "cta": {
+      "title": "Ready to Simplify Your Global Logistics?",
+      "description": "Get in touch with our team of experts to discuss your specific requirements and receive a customized logistics solution.",
+      "requestQuote": "Request a Quote",
+      "contactSales": "Contact Sales Team"
+    },
+    "serviceDetails": {
+      "freightForwarding": {
+        "description": "End-to-end logistics solutions for your global shipping needs, with dedicated route optimization, carrier selection, and comprehensive cargo management.",
+        "details": [
+          "Door-to-door delivery coordination",
+          "Carrier negotiation and booking",
+          "Route optimization and planning",
+          "Cargo insurance arrangements",
+          "Electronic tracking and visibility"
+        ]
+      },
+      "customsClearance": {
+        "description": "Expert handling of all customs documentation and regulatory compliance to ensure smooth border crossings and prevent costly delays.",
+        "details": [
+          "Customs documentation preparation",
+          "Tariff classification assistance",
+          "Regulatory compliance management",
+          "Duty and tax calculation",
+          "Customs bond facilitation"
+        ]
+      },
+      "exportImportConsultation": {
+        "description": "Strategic guidance on international trade regulations, market entry strategies, and optimization of your global supply chain.",
+        "details": [
+          "Trade compliance assessments",
+          "Import/export license guidance",
+          "Market entry strategy development",
+          "Supply chain optimization",
+          "Trade agreement benefits analysis"
+        ]
+      },
+      "internationalParcel": {
+        "description": "Reliable and cost-effective solutions for smaller shipments and parcels with global tracking capabilities and express options.",
+        "details": [
+          "Express and standard delivery options",
+          "Packaging guidelines and solutions",
+          "International tracking systems",
+          "Last-mile delivery coordination",
+          "Returns management"
+        ]
+      },
+      "seaExportImport": {
+        "description": "Comprehensive ocean freight services for both full container loads (FCL) and less than container loads (LCL) to destinations worldwide.",
+        "details": [
+          "FCL and LCL shipping solutions",
+          "Container management and tracking",
+          "Port-to-port and door-to-door options",
+          "Specialized equipment for oversized cargo",
+          "Transshipment coordination"
+        ]
+      },
+      "airExportImport": {
+        "description": "Fast and reliable air freight solutions for time-sensitive cargo with flexible scheduling and specialized handling capabilities.",
+        "details": [
+          "Express and consolidated air freight",
+          "Charter services for urgent shipments",
+          "Temperature-controlled transport",
+          "Dangerous goods handling",
+          "Airport-to-airport and door-to-door options"
+        ]
+      }
+    }
+  },
+  "aboutUs": {
+    "hero": {
+      "tagline": "Global Trade Excellence",
+      "title": "About Us",
+      "subtitle": "Spices specialists for over a decade",
+      "viewProducts": "View Products"
+    },
+    "main": {
+      "sectionTitle": "Who We Are",
+      "title": "About Briskwell International",
+      "paragraph1": "Briskwell International is a dynamic global trading company specializing in the import and export of high-quality goods across various industries. With a strong network of reliable partners and suppliers worldwide, we are committed to delivering excellence, efficiency, and trust in every transaction.",
+      "paragraph2": "Founded with a vision to bridge markets and build global connections, Briskwell International has grown into a trusted name in international trade. Our team brings together deep industry knowledge, logistics expertise, and a passion for seamless global commerce.",
+      "features": {
+        "global": "Global Presence",
+        "partners": "Trusted Partners",
+        "excellence": "Excellence Driven"
+      }
+    },
+    "coreValues": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide our journey towards excellence",
+      "values": {
+        "quality": {
+          "title": "Quality Excellence",
+          "description": "Maintaining the highest standards in every product we deliver.",
+          "icon": "🌟"
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Committed to environmentally conscious practices.",
+          "icon": "🌱"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Embracing new technologies and methods.",
+          "icon": "💡"
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Operating with transparency and ethical standards.",
+          "icon": "🤝"
+        }
+      }
+    },
+    "missionVision": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "To deliver premium quality Indian agricultural products to global markets while ensuring sustainable farming practices and fair trade relationships with our farmers."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To become the most trusted global partner in agricultural exports, known for quality, reliability, and commitment to sustainable development."
+      }
+    },
+    "stats": {
+      "globalPartners": {
+        "number": "50+",
+        "label": "Global Partners"
+      },
+      "countriesServed": {
+        "number": "25+",
+        "label": "Countries Served" 
+      },
+      "monthlyExport": {
+        "number": "1000+",
+        "label": "MT Monthly Export"
+      },
+      "farmerNetworks": {
+        "number": "500+",
+        "label": "Farmer Networks"
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "timeline": [
+        {
+          "year": "2024",
+          "title": "Company Foundation",
+          "description": "Established with a vision to bring premium Indian agricultural products to the global market."
+        },
+        {
+          "year": "2024",
+          "title": "Market Expansion",
+          "description": "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
+          "achievement": "ISO 9001:2025 Certified"
+        },
+        {
+          "year": "2025",
+          "title": "Product Portfolio Growth",
+          "description": "Added new product categories and strengthened partnerships with local farmers."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Connect",
+      "description": "Ready to explore how we can help grow your business? Get in touch with our team.",
+      "button": "Contact Us"
+    },
+    "imageAlts": {
+      "hero": "Port Operations",
+      "about": "Global Trade Network"
+    }
   }
 }

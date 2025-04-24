@@ -477,10 +477,10 @@ export default function Products() {
                         <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-spice-primary mt-1 flex-shrink-0"></div>
                         <div>
                           <h4 className="font-medium text-spice-dark text-sm md:text-base">
-                            Quality Assurance
+                            {t("products.details.qualityAssurance.title")}
                           </h4>
                           <p className="text-xs md:text-sm text-spice-text">
-                            All our products undergo rigorous quality checks
+                            {t("products.details.qualityAssurance.description")}
                           </p>
                         </div>
                       </div>
@@ -488,10 +488,10 @@ export default function Products() {
                         <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-spice-primary mt-1 flex-shrink-0"></div>
                         <div>
                           <h4 className="font-medium text-spice-dark text-sm md:text-base">
-                            Origin
+                            {t("products.details.origin.title")}
                           </h4>
                           <p className="text-xs md:text-sm text-spice-text">
-                            Sourced from premium growing regions in India
+                            {t("products.details.origin.description")}
                           </p>
                         </div>
                       </div>
@@ -499,11 +499,10 @@ export default function Products() {
                         <div className="w-4 h-4 md:w-5 md:h-5 rounded-full bg-spice-primary mt-1 flex-shrink-0"></div>
                         <div>
                           <h4 className="font-medium text-spice-dark text-sm md:text-base">
-                            Packaging
+                            {t("products.details.packaging.title")}
                           </h4>
                           <p className="text-xs md:text-sm text-spice-text">
-                            Available in various packaging options for bulk and
-                            retail
+                            {t("products.details.packaging.description")}
                           </p>
                         </div>
                       </div>
@@ -515,7 +514,7 @@ export default function Products() {
                       onClick={() => (window.location.href = "/contactus")}
                       className="w-full rounded-md bg-white px-4 md:px-8 py-2 md:py-3 font-body font-medium text-black transition-all shadow-md hover:shadow-blue-glow hover:-translate-y-0.5 text-sm md:text-base"
                     >
-                      Inquiry
+                      {t("products.inquiry")}
                     </button>
                   </div>
                 </div>
