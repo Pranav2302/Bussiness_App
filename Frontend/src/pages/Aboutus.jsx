@@ -33,7 +33,7 @@ const AboutUs = () => {
       description:
         "Established with a vision to bring premium Indian agricultural products to the global market.",
     },
-    {
+    {   
       year: "2024",
       title: "Market Expansion",
       description:
