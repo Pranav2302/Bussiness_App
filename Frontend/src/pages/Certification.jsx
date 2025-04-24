@@ -1,39 +1,42 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function Certification() {
+  const { t } = useTranslation();
+  
   const certificates = [
     {
       id: 1,
-      title: "ISO 9001:2015",
-      description: "Quality Management System Certification",
+      title: t("certification.certificates.iso.title"),
+      description: t("certification.certificates.iso.description"),
       image:
         "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
-      additionalInfo: "International Standard for Quality Management",
+      additionalInfo: t("certification.certificates.iso.additionalInfo"),
     },
     {
       id: 2,
-      title: "HACCP",
-      description: "Food Safety Management System",
+      title: t("certification.certificates.haccp.title"),
+      description: t("certification.certificates.haccp.description"),
       image:
         "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
-      additionalInfo: "Hazard Analysis Critical Control Point",
+      additionalInfo: t("certification.certificates.haccp.additionalInfo"),
     },
     {
       id: 3,
-      title: "GMP",
-      description: "Good Manufacturing Practices",
+      title: t("certification.certificates.gmp.title"),
+      description: t("certification.certificates.gmp.description"),
       image:
         "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
-      additionalInfo: "Manufacturing Quality Standards",
+      additionalInfo: t("certification.certificates.gmp.additionalInfo"),
     },
     {
       id: 4,
-      title: "FSSAI",
-      description: "Food Safety and Standards Authority of India",
+      title: t("certification.certificates.fssai.title"),
+      description: t("certification.certificates.fssai.description"),
       image:
         "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
-      additionalInfo: "Indian Food Safety Certification",
+      additionalInfo: t("certification.certificates.fssai.additionalInfo"),
     },
   ];
 
@@ -45,6 +48,7 @@ export default function Certification() {
           <img
             src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744639795/Business_App/p845aqpjlzzc3ya5adaw.jpg"
             className="w-full h-full object-cover"
+            alt={t("certification.title")}
           />
           <div className="absolute inset-0 " />
         </div>
@@ -61,7 +65,7 @@ export default function Certification() {
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-6xl font-bold text-white mb-6"
             >
-              Our Accreditations
+              {t("certification.title")}
             </motion.h1>
             <motion.p
               initial={{ opacity: 0 }}
@@ -69,8 +73,7 @@ export default function Certification() {
               transition={{ delay: 0.2 }}
               className="text-xl text-white/90 leading-relaxed max-w-2xl mx-auto"
             >
-              Committed to maintaining the highest standards of quality and
-              safety in global trade
+              {t("certification.subtitle")}
             </motion.p>
           </motion.div>
         </div>
@@ -88,7 +91,7 @@ export default function Certification() {
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317689/Business_App/mhqp2csjd1e7tct25k8k.jpg"
-                    alt="APEDA"
+                    alt={t("certification.certificates.apeda.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
                 </div>
@@ -101,7 +104,7 @@ export default function Certification() {
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317174/Business_App/rn3pturifgxsxumysaxr.jpg"
-                    alt="HACCP"
+                    alt={t("certification.certificates.haccp.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
                 </div>
@@ -114,7 +117,7 @@ export default function Certification() {
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317372/Business_App/woowp1mlqjrb819q9tuo.jpg"
-                    alt="FSSAI"
+                    alt={t("certification.certificates.fssai.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
                 </div>
@@ -127,7 +130,7 @@ export default function Certification() {
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744316999/Business_App/ftayaeccvxbc4hj7uyas.jpg"
-                    alt="ISO 9001:2015"
+                    alt={t("certification.certificates.iso.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
                 </div>
@@ -140,7 +143,7 @@ export default function Certification() {
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317274/Business_App/kjxrnwmj9iq4ofkbrfeu.jpg"
-                    alt="ISO 9001:2015"
+                    alt={t("certification.certificates.iso.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
                 </div>
@@ -157,9 +160,7 @@ export default function Certification() {
         className="mt-16 text-center"
       >
         <p className="text-black-200/90 max-w-2xl mx-auto leading-relaxed text-bold text-lg">
-          Our commitment to quality is backed by international certifications,
-          ensuring we meet the highest standards in food safety, manufacturing,
-          and quality management.
+          {t("certification.description")}
         </p>
       </motion.div>
     </div>

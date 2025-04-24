@@ -87,20 +87,20 @@ const Gallery = () => {
             className="max-w-3xl"
           >
             <motion.h1
-              initial={{ opacity: 0, y: 20 }}
-              animate={{ opacity: 1, y: 0 }}
-              className="text-5xl md:text-6xl font-bold text-white mb-6"
-            >
-              Our Gallery
-            </motion.h1>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 0.2 }}
-              className="text-xl text-white/90 leading-relaxed max-w-2xl"
-            >
-              Explore our journey through images, from farm to global markets
-            </motion.p>
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  className="text-5xl md:text-6xl font-bold text-white mb-6"
+>
+  {t("gallery.title")}
+</motion.h1>
+<motion.p
+  initial={{ opacity: 0 }}
+  animate={{ opacity: 1 }}
+  transition={{ delay: 0.2 }}
+  className="text-xl text-white/90 leading-relaxed max-w-2xl"
+>
+  {t("gallery.description")}
+</motion.p>
           </motion.div>
         </div>
       </section>

@@ -2,8 +2,11 @@ import React from "react";
 import { motion } from "framer-motion";
 import { GlowingEffect } from "../components/ui/glowing-effect";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 const AboutUs = () => {
+  const { t } = useTranslation();
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
@@ -26,63 +29,37 @@ const AboutUs = () => {
   };
 
   // Timeline data
-  const timeline = [
-    {
-      year: "2024 ",
-      title: "Company Foundation",
-      description:
-        "Established with a vision to bring premium Indian agricultural products to the global market.",
-    },
-    {
-      year: "2024",
-      title: "Market Expansion",
-      description:
-        "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
-    },
-    {
-      year: "2025",
-      title: "Product Portfolio Growth",
-      description:
-        "Added new product categories and strengthened partnerships with local farmers.",
-    },
-    // {
-    //   year: "2023",
-    //   title: "Digital Transformation",
-    //   description:
-    //     "Implemented state-of-the-art technology for supply chain management and quality control.",
-    // },
-  ];
+  const timeline = t("aboutUs.journey.timeline", { returnObjects: true });
 
   // Stats data
   const stats = [
-    { number: "50+", label: "Global Partners" },
-    { number: "25+", label: "Countries Served" },
-    { number: "1000+", label: "MT Monthly Export" },
-    { number: "500+", label: "Farmer Networks" },
+    { number: t("aboutUs.stats.globalPartners.number"), label: t("aboutUs.stats.globalPartners.label") },
+    { number: t("aboutUs.stats.countriesServed.number"), label: t("aboutUs.stats.countriesServed.label") },
+    { number: t("aboutUs.stats.monthlyExport.number"), label: t("aboutUs.stats.monthlyExport.label") },
+    { number: t("aboutUs.stats.farmerNetworks.number"), label: t("aboutUs.stats.farmerNetworks.label") },
   ];
 
   // Core values data
   const coreValues = [
     {
-      title: "Quality Excellence",
-      description:
-        "Maintaining the highest standards in every product we deliver.",
-      icon: "🌟",
+      title: t("aboutUs.coreValues.values.quality.title"),
+      description: t("aboutUs.coreValues.values.quality.description"),
+      icon: t("aboutUs.coreValues.values.quality.icon"),
     },
     {
-      title: "Sustainability",
-      description: "Committed to environmentally conscious practices.",
-      icon: "🌱",
+      title: t("aboutUs.coreValues.values.sustainability.title"),
+      description: t("aboutUs.coreValues.values.sustainability.description"),
+      icon: t("aboutUs.coreValues.values.sustainability.icon"),
     },
     {
-      title: "Innovation",
-      description: "Embracing new technologies and methods.",
-      icon: "💡",
+      title: t("aboutUs.coreValues.values.innovation.title"),
+      description: t("aboutUs.coreValues.values.innovation.description"),
+      icon: t("aboutUs.coreValues.values.innovation.icon"),
     },
     {
-      title: "Integrity",
-      description: "Operating with transparency and ethical standards.",
-      icon: "🤝",
+      title: t("aboutUs.coreValues.values.integrity.title"),
+      description: t("aboutUs.coreValues.values.integrity.description"),
+      icon: t("aboutUs.coreValues.values.integrity.icon"),
     },
   ];
 
@@ -94,7 +71,7 @@ const AboutUs = () => {
         <div className="absolute inset-0">
           <img
             src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
-            alt="Port Operations"
+            alt={t("aboutUs.imageAlts.hero")}
             className="w-full h-full object-cover object-center"
           />
           <div className="absolute inset-0 " />
@@ -114,16 +91,15 @@ const AboutUs = () => {
               transition={{ delay: 0.3 }}
               className="inline-block px-4 py-2 bg-white/40 backdrop-blur-sm rounded-full text-white/90 mb-6"
             >
-              Global Trade Excellence
+              {t("aboutUs.hero.tagline")}
             </motion.span>
             <h1 className="font-display text-5xl md:text-6xl font-bold mb-6 text-white">
-              {/* Who are we ?{" "} */}
               <span className="text-white-400 ">
-                About Us {/* Spices specialists for over a decade */}
+                {t("aboutUs.hero.title")}
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-white/90 leading-relaxed max-w-2xl">
-              Spices specialists for over a decade
+              {t("aboutUs.hero.subtitle")}
             </p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -134,9 +110,9 @@ const AboutUs = () => {
               <Link
                 to="/products"
                 className="px-8 py-3 bg-white/40 backdrop-blur-sm text-white rounded-full 
-          hover:bg-white/20 transition-all hover:-translate-y-1 duration-300 "
+                hover:bg-white/20 transition-all hover:-translate-y-1 duration-300"
               >
-                View Products
+                {t("aboutUs.hero.viewProducts")}
               </Link>
             </motion.div>
           </motion.div>
@@ -168,10 +144,10 @@ const AboutUs = () => {
                   <div className="bg-white/90 p-8 md:p-12 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300">
                     <div className="mb-8">
                       <span className="inline-block text-blue-600/90 text-sm font-semibold tracking-wider uppercase mb-4">
-                        Who We Are
+                        {t("aboutUs.main.sectionTitle")}
                       </span>
                       <h2 className="font-display text-3xl md:text-4xl font-bold text-spice-primary mb-4">
-                        About Briskwell International
+                        {t("aboutUs.main.title")}
                       </h2>
                       <div className="w-20 h-1 bg-gradient-to-r from-blue-500/40 via-blue-500/80 to-blue-500/40 rounded-full" />
                     </div>
@@ -188,11 +164,7 @@ const AboutUs = () => {
                         <span className="text-spice-primary font-semibold">
                           Briskwell International
                         </span>{" "}
-                        is a dynamic global trading company specializing in the
-                        import and export of high-quality goods across various
-                        industries. With a strong network of reliable partners
-                        and suppliers worldwide, we are committed to delivering
-                        excellence, efficiency, and trust in every transaction.
+                        {t("aboutUs.main.paragraph1")}
                       </motion.p>
                       <motion.p
                         variants={{
@@ -205,11 +177,7 @@ const AboutUs = () => {
                         }}
                         className="relative pl-6 border-l-2 border-blue-100"
                       >
-                        Founded with a vision to bridge markets and build global
-                        connections, Briskwell International has grown into a
-                        trusted name in international trade. Our team brings
-                        together deep industry knowledge, logistics expertise,
-                        and a passion for seamless global commerce.
+                        {t("aboutUs.main.paragraph2")}
                       </motion.p>
                     </div>
 
@@ -217,19 +185,19 @@ const AboutUs = () => {
                       <div className="px-6 py-3 rounded-full bg-blue-50/80 backdrop-blur-sm flex items-center gap-2 hover:bg-blue-50 transition-colors">
                         <span className="text-blue-600">🌐</span>
                         <span className="text-sm font-medium text-blue-700">
-                          Global Presence
+                          {t("aboutUs.main.features.global")}
                         </span>
                       </div>
                       <div className="px-6 py-3 rounded-full bg-blue-50/80 backdrop-blur-sm flex items-center gap-2 hover:bg-blue-50 transition-colors">
                         <span className="text-blue-600">🤝</span>
                         <span className="text-sm font-medium text-blue-700">
-                          Trusted Partners
+                          {t("aboutUs.main.features.partners")}
                         </span>
                       </div>
                       <div className="px-6 py-3 rounded-full bg-blue-50/80 backdrop-blur-sm flex items-center gap-2 hover:bg-blue-50 transition-colors">
                         <span className="text-blue-600">⭐</span>
                         <span className="text-sm font-medium text-blue-700">
-                          Excellence Driven
+                          {t("aboutUs.main.features.excellence")}
                         </span>
                       </div>
                     </div>
@@ -253,7 +221,7 @@ const AboutUs = () => {
                 <div className="relative rounded-3xl overflow-hidden shadow-xl">
                   <motion.img
                     src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744387838/Business_App/xnsb7uhgjwc3mcwizquy.jpg"
-                    alt="Global Trade Network"
+                    alt={t("aboutUs.imageAlts.about")}
                     className="w-full h-full object-cover"
                     animate={{
                       scale: [1, 1.02, 1],
@@ -271,6 +239,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
       {/* Core Values Section with new background */}
       <section className="py-24 bg-gradient-to-b from-blue-50/50 to-white">
         <div className="container mx-auto px-6">
@@ -281,10 +250,10 @@ const AboutUs = () => {
             className="text-center mb-16"
           >
             <h2 className="font-display text-4xl font-bold text-spice-primary mb-4">
-              Our Core Values
+              {t("aboutUs.coreValues.title")}
             </h2>
             <p className="text-lg text-spice-text max-w-2xl mx-auto">
-              The principles that guide our journey towards excellence
+              {t("aboutUs.coreValues.subtitle")}
             </p>
           </motion.div>
 
@@ -313,6 +282,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
       {/* Mission & Vision Section with subtle gradient */}
       <section className="py-24 bg-gradient-to-b from-white via-gray-50/50 to-white">
         <div className="container mx-auto px-6">
@@ -329,12 +299,10 @@ const AboutUs = () => {
                 <GlowingEffect spread={40} glow={true} />
                 <div className="bg-white p-8 rounded-xl shadow-card hover:shadow-glossy-hover transition-all h-full">
                   <h2 className="font-display text-3xl font-bold text-spice-primary mb-6">
-                    Our Mission
+                    {t("aboutUs.missionVision.mission.title")}
                   </h2>
                   <p className="text-lg text-spice-text leading-relaxed">
-                    To deliver premium quality Indian agricultural products to
-                    global markets while ensuring sustainable farming practices
-                    and fair trade relationships with our farmers.
+                    {t("aboutUs.missionVision.mission.description")}
                   </p>
                 </div>
               </div>
@@ -346,12 +314,10 @@ const AboutUs = () => {
                 <GlowingEffect spread={40} glow={true} />
                 <div className="bg-white p-8 rounded-xl shadow-card hover:shadow-glossy-hover transition-all h-full">
                   <h2 className="font-display text-3xl font-bold text-spice-primary mb-6">
-                    Our Vision
+                    {t("aboutUs.missionVision.vision.title")}
                   </h2>
                   <p className="text-lg text-spice-text leading-relaxed">
-                    To become the most trusted global partner in agricultural
-                    exports, known for quality, reliability, and commitment to
-                    sustainable development.
+                    {t("aboutUs.missionVision.vision.description")}
                   </p>
                 </div>
               </div>
@@ -359,6 +325,7 @@ const AboutUs = () => {
           </motion.div>
         </div>
       </section>
+
       {/* Stats Section with new background */}
       <section className="py-16 bg-gradient-to-b from-blue-50/30 to-white">
         <div className="container mx-auto px-6">
@@ -387,6 +354,7 @@ const AboutUs = () => {
           </motion.div>
         </div>
       </section>
+
       {/* Timeline Section with enhanced styling */}
       <section className="py-24 bg-gradient-to-b from-white to-blue-50/20">
         <div className="container mx-auto px-6">
@@ -396,7 +364,7 @@ const AboutUs = () => {
             viewport={{ once: true }}
             className="text-center font-display text-4xl font-bold text-spice-primary mb-16"
           >
-            Our Journey
+            {t("aboutUs.journey.title")}
           </motion.h2>
 
           <div className="relative max-w-7xl mx-auto">
@@ -448,11 +416,11 @@ const AboutUs = () => {
                           </p>
 
                           {/* Optional Achievement Badge */}
-                          {index === 1 && (
+                          {index === 1 && item.achievement && (
                             <div className="mt-4 inline-flex items-center gap-2 bg-blue-50 px-4 py-2 rounded-full">
                               <span className="text-blue-600">🏆</span>
                               <span className="text-sm font-medium text-blue-600">
-                                ISO 9001:2025 Certified
+                                {item.achievement}
                               </span>
                             </div>
                           )}
@@ -466,6 +434,7 @@ const AboutUs = () => {
           </div>
         </div>
       </section>
+
       {/* Contact Section with new gradient */}
       <section className="py-24 bg-gradient-to-b from-blue-50/20 to-white">
         <div className="container mx-auto px-6">
@@ -476,18 +445,17 @@ const AboutUs = () => {
             className="text-center max-w-3xl mx-auto"
           >
             <h2 className="font-display text-4xl font-bold text-spice-primary mb-6">
-              Let's Connect
+              {t("aboutUs.contact.title")}
             </h2>
             <p className="text-lg text-spice-text mb-8">
-              Ready to explore how we can help grow your business? Get in touch
-              with our team.
+              {t("aboutUs.contact.description")}
             </p>
             <Link
-              to="/contact"
+              to="/contactus"
               className="inline-block bg-spice-primary text-white px-8 py-3 rounded-full font-semibold 
               hover:bg-spice-primary/90 transition-colors shadow-blue-glow hover:-translate-y-1 duration-300"
             >
-              Contact Us
+              {t("aboutUs.contact.button")}
             </Link>
           </motion.div>
         </div>

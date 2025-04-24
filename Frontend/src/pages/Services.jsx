@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next"; // Ensure you import this
 
 // Import icons for the animated gallery
 const IconArrowLeft = () => (
@@ -206,6 +207,7 @@ const AnimatedFeatureService = ({ services, autoplay = false }) => {
 };
 
 export default function Services() {
+  const { t } = useTranslation();
   const navigate = useNavigate();
   const [selectedService, setSelectedService] = useState(null);
   const [hoveredIndex, setHoveredIndex] = useState(null);
@@ -414,14 +416,14 @@ export default function Services() {
               transition={{ delay: 0.2 }}
               className="inline-block px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 mb-6 "
             >
-              Global Logistics Partner
+              {t("services.hero.tagline")}
             </motion.span>
             <motion.h1
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               className="text-5xl md:text-6xl font-bold text-white mb-6  "
             >
-              Logistics <span className="text-blue-400">Services</span>{" "}
+              {t("services.hero.title")} <span className="text-blue-400">Services</span>
               
             </motion.h1>
             <motion.p
@@ -430,8 +432,7 @@ export default function Services() {
               transition={{ delay: 0.4 }}
               className="text-xl text-white/90 leading-relaxed max-w-2xl"
             >
-              From freight forwarding to customs clearance, we offer end-to-end
-              solutions to streamline your global trade operations.
+              {t("services.hero.description")}
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -444,7 +445,7 @@ export default function Services() {
                 className="px-8 py-3 bg-blue-600 rounded-md hover:bg-blue-700 transition-all hover:-translate-y-1 duration-300 shadow-md"
                 style={{ color: "white" }} // pure black
               >
-                Explore Services
+                {t("services.hero.exploreButton")}
               </a>
 
               <a
@@ -452,7 +453,7 @@ export default function Services() {
                 className="px-8 py-3 bg-white/10 backdrop-blur-sm text-  rounded-md hover:bg-white/20 transition-all hover:-translate-y-1 duration-300"
                 style={{ color: "white" }} // pure black
               >
-                Request Quote
+                {t("services.hero.quoteButton")}
               </a>
             </motion.div>
           </motion.div>
@@ -491,8 +492,8 @@ export default function Services() {
             >
               <ServiceCard
                 icon="🚢"
-                title="Sea Export/Import (FCL/LCL)"
-                description="Comprehensive ocean freight services for both full container loads and consolidation shipments with competitive rates and reliable scheduling."
+                title={t("services.serviceCards.seaExportImport.title")}
+                description={t("services.serviceCards.seaExportImport.description")}
               />
             </motion.div>
 
@@ -816,24 +817,23 @@ export default function Services() {
       >
         <div className="container mx-auto px-6 text-center">
           <h2 className="font-display text-3xl md:text-4xl font-bold text-white mb-4">
-            Ready to Simplify Your Global Logistics?
+            {t("services.cta.title")}
           </h2>
           <p className="font-body text-lg text-white/90 mb-8 max-w-2xl mx-auto">
-            Get in touch with our team of experts to discuss your specific
-            requirements and receive a customized logistics solution.
+            {t("services.cta.description")}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button
               onClick={() => navigate('/contactus')}
               className="inline-block rounded-md bg-white px-8 py-3 font-body font-bold text-blue-600 hover:bg-blue-50 transition-all shadow-md hover:-translate-y-0.5"
             >
-              Request a Quote
+              {t("services.cta.requestQuote")}
             </button>
             <button
               onClick={() => navigate('/contactus')}
               className="inline-block rounded-md bg-transparent border border-white px-8 py-3 font-body font-bold text-white hover:bg-white/10 transition-all"
             >
-              Contact Sales Team
+              {t("services.cta.contactSales")}
             </button>
           </div>
         </div>
