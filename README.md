@@ -1,4 +1,5 @@
 Briskwell International - Business Web Application  
+<!-- Frontend/public/locales/image-ss.png) -->
 Overview  
 Briskwell International is a comprehensive web application for a global trading company specializing in the export of premium Indian agricultural products. The application showcases the company's products, services, and global presence through an intuitive and visually appealing interface.
 Features  
