@@ -334,7 +334,7 @@ ${formData.message}
           <h2 className="text-2xl font-bold mb-6 text-spice-primary">{t('contactUs.info.title')}</h2>
           <div className="space-y-6">
             <div>
-              <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.locationTitle')}</h3>
+              <h3 className="text-lg font-medium contact-us-heading mb-2">{t('contactUs.info.locationTitle')}</h3>
               <p className="text-spice-text">
                 {t('contactUs.info.address.line1')}, <br />
                 {t('contactUs.info.address.line2')}, <br />
@@ -344,21 +344,21 @@ ${formData.message}
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.emailTitle')}</h3>
+              <h3 className="text-lg font-medium contact-us-heading mb-2">{t('contactUs.info.emailTitle')}</h3>
               <a href="mailto:info@briskwellinternational.com" className="text-spice-primary hover:text-spice-secondary transition-colors">
                 {t('contactUs.info.emailAddress')}
               </a>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.phoneTitle')}</h3>
+              <h3 className="text-lg font-medium contact-us-heading mb-2">{t('contactUs.info.phoneTitle')}</h3>
               <a href="tel:+919922990892" className="text-spice-primary hover:text-spice-secondary transition-colors">
                 {t('contactUs.info.phoneNumber')}
               </a>
             </div>
             
             <div>
-              <h3 className="text-lg font-medium text-spice-dark mb-2">{t('contactUs.info.hoursTitle')}</h3>
+              <h3 className="text-lg font-medium contact-us-heading mb-2">{t('contactUs.info.hoursTitle')}</h3>
               <p className="text-spice-text">
                 {t('contactUs.info.hours.weekdays')}<br />
                 {t('contactUs.info.hours.saturday')}<br />
@@ -367,7 +367,7 @@ ${formData.message}
             </div>
             
             <div className="mt-8">
-              <h3 className="text-lg font-medium text-spice-dark mb-3">{t('contactUs.info.socialTitle')}</h3>
+              <h3 className="text-lg font-medium contact-us-heading mb-3">{t('contactUs.info.socialTitle')}</h3>
               <div className="flex space-x-4">
                 <a href="#" className="text-spice-primary hover:text-spice-secondary transition-colors" aria-label="Facebook">
                   <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">

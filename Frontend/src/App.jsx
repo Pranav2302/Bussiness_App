@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 
 // Import components
@@ -7,6 +7,7 @@ import NavbarComponent from "./components/NavbarComponent";
 import Footer from "./components/Footer";
 import WhatsAppButton from "./components/WhatsAppButton"; // Import the WhatsApp button
 import { VideoPopup } from "../src/components/VideoPopup"; // Import the VideoPopup component
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop component
 
 // Import pages
 import Home from "./pages/Home";
@@ -19,10 +20,11 @@ import ContactUs from "./pages/ContactUs";
 
 function App() {
   return (
-    <BrowserRouter>
+    <Router>
+      <ScrollToTop />
       <div className="bg-white min-h-screen flex flex-col">
         <NavbarComponent />
-        <main className="flex-grow pt-24">
+        <main className="flex-grow pt-20">
           {/* Padding for floating navbar */}
           <Routes>
             <Route path="/" element={<Home />} />
@@ -43,7 +45,7 @@ function App() {
           message="Hello! I'm interested in your products. Can you provide more information?" 
         />
       </div>
-    </BrowserRouter>
+    </Router>
   );
 }
 

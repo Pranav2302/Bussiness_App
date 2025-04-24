@@ -15,7 +15,7 @@ body {
   color: #334155;
 }
 
-h2, h3, h4, h5, h6 {
+h2, h4, h5, h6 {
   font-family: 'Montserrat', sans-serif;
   color: #1e3a5f;
 }
@@ -23,7 +23,10 @@ h1 {
   font-family: 'Montserrat', sans-serif;
   color: #ffffff;
 }
-
+h3 {
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+}
 a {
   color: #000000;
   transition: all 0.2s ease;
@@ -82,4 +85,30 @@ img {
   html {
     scroll-behavior: smooth;
   }
+}
+
+
+/* Specific styling for product card titles */
+.product-title {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e3a5f !important; /* Using your spice-primary color */
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+  line-height: 1.4;
+  transition: color 0.2s ease;
+}
+
+/* Product modal headings */
+.product-detail-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e3a5f;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.contact-us-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #1c2735 !important;
+  font-weight: 500;
 }

@@ -1,7 +1,6 @@
 import React, { lazy, Suspense, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import { GlowingEffect } from "../components/ui/glowing-effect";
 import { useTranslation } from "react-i18next";
 import { Products } from "../components/ProductCarousel";
 import { BusinessDetails } from "./BusinessDetails";
@@ -12,25 +11,19 @@ import bgImage2 from "../assets/background/bg2.jpg";
 import bgImage3 from "../assets/background/bg3.jpg";
 import bgImage4 from "../assets/background/bg4.jpg";
 
-// Lazy load heavy components
-const Githubglobe = lazy(() =>
-  import("./Githubglobe").then((module) => ({
-    default: module.Githubglobe,
-  }))
-);
+
 
 const WorldMapDemo = lazy(() => import("./WorldMap"));
 
 // Cloudinary hero images array
 const heroImages = [
   // Commented photo references
-  bgImage1,
   bgImage2,
+  bgImage1,
   bgImage3,
   bgImage4,
 
-  // Video URL
-  // "https://res.cloudinary.com/doxrnqdwn/video/upload/v1745218292/Business_App/ease2vezsgbdccfhws1g.mp4",
+  
 ];
 
 export default function Home() {
@@ -398,19 +391,7 @@ export default function Home() {
           </Link>
         </div>
       </section>
-      {/* Globe visualization can remain in another section if needed */}
-      <section className="py-10 bg-white">
-        <Suspense
-          fallback={
-            <div className="h-[500px] w-full flex items-center justify-center">
-              <div className="text-spice-primary">{t("loading.globe")}</div>
-            </div>
-          }
-        >
-          {/* Uncomment if you want to use the GitHub globe */}
-          {/* <Githubglobe /> */}
-        </Suspense>
-      </section>
+     
 
       {/* What we do section */}
       <section className="relative py-24 bg-gradient-to-b from-white via-blue-50 to-white overflow-hidden">
@@ -555,15 +536,6 @@ export default function Home() {
       {/* Global Reach Section - Globe Visualization */}
       <section className="py-10 bg-white">
         <div className="container mx-auto px-6">
-          <div className="text-center mb-12">
-            <h2 className="font-display text-3xl font-bold text-spice-primary mb-3">
-              {t("globalReach.title")}
-            </h2>
-            <p className="font-body text-spice-text max-w-2xl mx-auto">
-              {t("globalReach.description")}
-            </p>
-          </div>
-
           <Suspense
             fallback={
               <div className="h-[500px] w-full flex items-center justify-center">
