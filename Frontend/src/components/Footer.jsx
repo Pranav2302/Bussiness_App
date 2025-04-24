@@ -1,38 +1,35 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import LOGO from "../assets/LOGO3.png";
 
 export default function Footer() {
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-spice-dark text-white">
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 gap-6 md:grid-cols-4">
-          {/* Company Info with Logo - ENLARGED */}
+          {/* Company Info with Logo */}
           <div className="col-span-1 md:col-span-1 flex flex-col items-start">
-            {/* Increased logo size and adjusted margins */}
             <div className="mb-6 w-full flex justify-start">
               <img
                 src={LOGO}
                 alt="Briskwell International Logo"
-                className="w-[240px] h-auto" // Increased size from 180px to 240px
+                className="w-[240px] h-auto"
               />
             </div>
             <p className="text-spice-secondary mb-6 font-body text-base text-black/90">
-              Briskwell International Premium exporters of fine spices and
-              authentic traditional products from India. Delivering quality,
-              purity, and rich Indian heritage to global markets with a
-              commitment to excellence.
+              {t("footer.companyDescription")}
             </p>
             <div className="flex space-x-5 mt-2">
-              {" "}
-              {/* Increased spacing between icons */}
               <a
                 href="#"
                 aria-label="Facebook"
                 className="text-white hover:text-spice-secondary transition-all transform hover:scale-110"
               >
                 <svg
-                  className="w-7 h-7" // Increased size from 6 to 7
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -50,7 +47,7 @@ export default function Footer() {
                 className="text-white hover:text-spice-secondary transition-all transform hover:scale-110"
               >
                 <svg
-                  className="w-7 h-7" // Increased size
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                   aria-hidden="true"
@@ -68,7 +65,7 @@ export default function Footer() {
                 className="text-white hover:text-spice-secondary transition-all transform hover:scale-110"
               >
                 <svg
-                  className="w-7 h-7" // Increased size
+                  className="w-7 h-7"
                   fill="currentColor"
                   viewBox="0 0 24 24"
                 >
@@ -78,20 +75,18 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Quick Links - Better spacing */}
+          {/* Quick Links */}
           <div className="mt-2 md:mt-0 md:pl-22">
             <h3 className="font-display text-xl font-bold mb-5 text-spice-secondary">
-              Quick Links
+              {t("footer.quickLinks")}
             </h3>
             <ul className="space-y-1 font-body text-base">
-              {" "}
-              {/* Increased spacing */}
               <li>
                 <Link
                   to="/"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  Home
+                  {t("footer.links.home")}
                 </Link>
               </li>
               <li>
@@ -99,7 +94,7 @@ export default function Footer() {
                   to="/aboutus"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  About Us
+                  {t("footer.links.aboutUs")}
                 </Link>
               </li>
               <li>
@@ -107,7 +102,7 @@ export default function Footer() {
                   to="/products"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  Products
+                  {t("footer.links.products")}
                 </Link>
               </li>
               <li>
@@ -115,7 +110,7 @@ export default function Footer() {
                   to="/certification"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  Certifications
+                  {t("footer.links.certification")}
                 </Link>
               </li>
               <li>
@@ -123,7 +118,7 @@ export default function Footer() {
                   to="/gallery"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  Gallery
+                  {t("footer.links.gallery")}
                 </Link>
               </li>
               <li>
@@ -131,62 +126,59 @@ export default function Footer() {
                   to="/contactus"
                   className="hover:text-spice-secondary transition-colors inline-block"
                 >
-                  Contact Us
+                  {t("footer.links.contactUs")}
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Contact Info - Improved layout */}
+          {/* Contact Info */}
           <div className="mt-2 md:mt-0">
             <h3 className="font-display text-xl font-bold mb-5 text-spice-secondary">
-              Contact Information
+              {t("footer.contactInfo.title")}
             </h3>
 
             <div className="space-y-1">
-              {" "}
-              {/* Added vertical spacing between sections */}
               <div>
-                <h4 className="font-semibold mb-2">Office Location:</h4>
+                <h4 className="font-semibold mb-2">{t("footer.contactInfo.office.label")}</h4>
                 <p className="text-black/90 leading-relaxed">
-                  A602, Lotus Sanskruti, bldg 2, Malawalenager 2, Mukai chowk,
-                  Ravet- Kiwale, Pune-412101.
+                  {t("footer.contactInfo.office.address")}
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Get a Quote:</h4>
+                <h4 className="font-semibold mb-2">{t("footer.contactInfo.quote.label")}</h4>
                 <a
                   href="tel:+919922990829"
                   className="block text-white/90 hover:text-spice-secondary transition-colors"
                 >
-                  +91 9922990829
+                  {t("footer.contactInfo.quote.phone")}
                 </a>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">Email:</h4>
+                <h4 className="font-semibold mb-2">{t("footer.contactInfo.email.label")}</h4>
                 <a
                   href="mailto:info@briskwellinternational.com"
                   className="block text-white/90 hover:text-spice-secondary transition-colors mb-1"
                 >
-                  info@briskwellinternational.com
+                  {t("footer.contactInfo.email.primary")}
                 </a>
                 <a
                   href="mailto:briskwellinternational@gmail.com"
                   className="block text-white/90 hover:text-spice-secondary transition-colors"
                 >
-                  briskwellinternational@gmail.com
+                  {t("footer.contactInfo.email.secondary")}
                 </a>
               </div>
             </div>
           </div>
 
-          {/* Find us here - Fixed map ratio */}
+          {/* Find us here */}
           <div className="mt-4 md:mt-0">
             <h3 className="font-display text-xl font-bold mb-5 text-spice-secondary">
-              Find us here
+              {t("footer.location.title")}
             </h3>
 
-            {/* Map - Added higher resolution */}
+            {/* Map */}
             <div className="relative h-[220px] w-full rounded-lg overflow-hidden shadow-lg mb-6 border border-white/10">
               <div className="absolute inset-0 bg-gradient-to-b from-spice-primary/20 to-transparent z-10" />
               <iframe
@@ -199,23 +191,23 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        {/* Copyright section with developer credits */}
+        
+        {/* Copyright section */}
         <div className="mt-12 border-t border-spice-secondary/30 pt-8 font-body">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
             <div>
               <p className="text-black/80 text-left">
-                © {new Date().getFullYear()} Briskwell International. All rights
-                reserved.
+                {t("footer.copyright", { year: new Date().getFullYear() })}
               </p>
             </div>
             <div className="mt-4 md:mt-0">
               <p className="text-sm text-black/60">
-                Developed with ❤️ by{" "}
+                {t("footer.developer")}{" "}
                 <a className="text-spice-secondary hover:text-spice-primary transition-colors">
                   Prajwal Korade-Pranav Kamble
                 </a>{" "}
                 <span className="px-2">|</span>
-                <span className="text-black/60">PK</span>
+                <span className="text-black/60">{t("footer.developerInitials")}</span>
               </p>
             </div>
           </div>

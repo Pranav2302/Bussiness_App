@@ -33,7 +33,7 @@ const AboutUs = () => {
       description:
         "Established with a vision to bring premium Indian agricultural products to the global market.",
     },
-    {   
+    {
       year: "2024",
       title: "Market Expansion",
       description:
@@ -93,7 +93,7 @@ const AboutUs = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745487635/Business_App/buepoq0z20o2yzzort60.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
             alt="Port Operations"
             className="w-full h-full object-cover object-center"
           />

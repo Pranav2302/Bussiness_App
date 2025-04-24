@@ -118,6 +118,11 @@ img {
   color: #1e3a5f !important; 
   font-weight: 600;
 }
+.service-heading {
+  font-family: 'Montserrat', sans-serif;
+  color: #1e3a5f !important;
+  font-weight: 600;
+}
 
 /* Page loader animation */
 @keyframes pulse {
