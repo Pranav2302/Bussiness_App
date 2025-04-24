@@ -1,9 +1,15 @@
 [[headers]]
-  for = "/*.js"
+  for = "/*.(js|mjs|js.map)"
   [headers.values]
     Content-Type = "application/javascript"
 
 [[headers]]
-  for = "/*.mjs"
+  for = "/*.css"
   [headers.values]
-    Content-Type = "application/javascript"
+    Content-Type = "text/css"
+
+# Handle dynamic imports from Vite
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
