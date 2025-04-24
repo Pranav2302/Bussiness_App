@@ -11,13 +11,163 @@
   },
   "hero": {
     "title": {
-      "start": "Premium Quality Indian",
-      "highlight": "Agricultural Exports"
+      "start": "Global Trading Excellence",
+      "highlight": "Import & Export Solutions"
     },
-    "subtitle": "Connecting Indian farmers with global markets through premium-quality agricultural exports",
+    "subtitle": "Your trusted partner for international trade and logistics services",
     "cta": {
-      "explore": "Explore Our Products",
-      "quote": "Get a Quote"
+      "explore": "Our Services",
+      "quote": "Get Quote"
+    }
+  },
+  "about": {
+    "title": "About Briskwell International",
+    "description": {
+      "part1": "Founded in 2024, Briskwell International is a dynamic global trading company specializing in the import and export of high-quality goods across various industries. With a strong network of reliable partners and suppliers worldwide, we are committed to delivering excellence, efficiency, and trust in every transaction.",
+      "part2": "At Briskwell International, we believe in forging lasting partnerships and enabling businesses to thrive beyond borders. Our mission is simple — to make global trade faster, smarter, and more reliable."
+    },
+    "stats": {
+      "partners": {
+        "number": "50+",
+        "label": "Global Partners"
+      },
+      "countries": {
+        "number": "25+",
+        "label": "Countries Served"
+      },
+      "export": {
+        "number": "1000+",
+        "label": "MT Monthly Export"
+      }
+    },
+    "learnMore": "Learn More About Us"
+  },
+  "aboutUs": {
+    "title": "About Us",
+    "subtitle": "Briskwell International - Your Trusted Partner in Global Trade",
+    "description": "Briskwell International is a leading exporter of premium Indian commodities, specializing in spices, sugar, jaggery, and rice. With a commitment to quality and sustainability, we connect Indian farmers with global markets, ensuring fair trade practices and timely delivery.",
+    "mission": {
+      "title": "Our Mission",
+      "description": "To provide high-quality Indian agricultural products to the world while promoting sustainable farming practices and fair trade."
+    },
+    "vision": {
+      "title": "Our Vision",
+      "description": "To be a global leader in the export of Indian commodities, recognized for our commitment to quality, sustainability, and ethical sourcing."
+    },
+    "hero": {
+      "tagline": "Global Trade Excellence",
+      "title": "About Us",
+      "subtitle": "Spices specialists for over a decade", 
+      "viewProducts": "View Products"
+    },
+    "main": {
+      "sectionTitle": "Who We Are",
+      "title": "About Briskwell International",
+      "paragraph1": "Briskwell International is a dynamic global trading company specializing in the import and export of high-quality goods across various industries. With a strong network of reliable partners and suppliers worldwide, we are committed to delivering excellence, efficiency, and trust in every transaction.",
+      "paragraph2": "Founded with a vision to bridge markets and build global connections, Briskwell International has grown into a trusted name in international trade. Our team brings together deep industry knowledge, logistics expertise, and a passion for seamless global commerce.",
+      "features": {
+        "global": "Global Presence",
+        "partners": "Trusted Partners",
+        "excellence": "Excellence Driven"
+      }
+    },
+    "coreValues": {
+      "title": "Our Core Values",
+      "subtitle": "The principles that guide our journey towards excellence",
+      "values": {
+        "quality": {
+          "title": "Quality Excellence",
+          "description": "Maintaining the highest standards in every product we deliver.",
+          "icon": "🌟"
+        },
+        "sustainability": {
+          "title": "Sustainability",
+          "description": "Committed to environmentally conscious practices.",
+          "icon": "🌱"
+        },
+        "innovation": {
+          "title": "Innovation",
+          "description": "Embracing new technologies and methods.",
+          "icon": "💡"
+        },
+        "integrity": {
+          "title": "Integrity",
+          "description": "Operating with transparency and ethical standards.",
+          "icon": "🤝"
+        }
+      }
+    },
+    "missionVision": {
+      "mission": {
+        "title": "Our Mission",
+        "description": "To deliver premium quality Indian agricultural products to global markets while ensuring sustainable farming practices and fair trade relationships with our farmers."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "description": "To become the most trusted global partner in agricultural exports, known for quality, reliability, and commitment to sustainable development."
+      }
+    },
+    "stats": {
+      "globalPartners": {
+        "number": "50+",
+        "label": "Global Partners"
+      },
+      "countriesServed": {
+        "number": "25+",
+        "label": "Countries Served" 
+      },
+      "monthlyExport": {
+        "number": "1000+",
+        "label": "MT Monthly Export"
+      },
+      "farmerNetworks": {
+        "number": "500+",
+        "label": "Farmer Networks"
+      }
+    },
+    "journey": {
+      "title": "Our Journey",
+      "timeline": [
+        {
+          "year": "2024",
+          "title": "Company Foundation",
+          "description": "Established with a vision to bring premium Indian agricultural products to the global market."
+        },
+        {
+          "year": "2024",
+          "title": "Market Expansion",
+          "description": "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
+          "achievement": "ISO 9001:2025 Certified"
+        },
+        {
+          "year": "2025",
+          "title": "Product Portfolio Growth",
+          "description": "Added new product categories and strengthened partnerships with local farmers."
+        }
+      ]
+    },
+    "contact": {
+      "title": "Let's Connect",
+      "description": "Ready to explore how we can help grow your business? Get in touch with our team.",
+      "button": "Contact Us"
+    },
+    "imageAlts": {
+      "hero": "Port Operations",
+      "about": "Global Trade Network"
+    }
+  },
+  "businessDetails": {
+    "ceoFounder": {
+      "title": "CEO & Founder",
+      "value": "Mrs. Reena Gole"
+    },
+    "establishment": {
+      "title": "Year of Establishment",
+      "value": "2024"
+    },
+    "businessNature": {
+      "title": "Business Nature", 
+      "value": "Export & Import"
     }
   },
   "products": {
@@ -106,8 +256,7 @@
   "loading": {
     "globe": "Loading Global Reach Map...",
     "map": "Loading World Map...",
-    "worldMap": "Loading world map visualization...",
-    "globe": "Loading global visualization..."
+    "worldMap": "Loading world map visualization..."
   },
   "whatWeDo": {
     "title": "What We Do",
@@ -211,41 +360,40 @@
   },
   "gallery": {
     "title": "Our Gallery",
-    "description": "Explore our collection of images showcasing our products, facilities, and the journey from farm to global markets.",
-    "featured": {
-      "title": "Featured Highlights"
+    "description": "Explore our journey through images, from farm to global markets",
+    "category": "Images",
+    "image1": {
+      "alt": "Farmers in Field",
+      "title": "Our Farming Partners",
+      "description": "Working closely with local farmers to ensure sustainable agricultural practices."
     },
-    "categories": {
-      "all": "All",
-      "products": "Products",
-      "facilities": "Facilities",
-      "events": "Events",
-      "team": "Team"
+    "image2": {
+      "alt": "Harvesting Process",
+      "title": "Harvest Season",
+      "description": "Farmers harvesting crops using traditional and modern methods."
     },
-    "controls": {
-      "previous": "Previous",
-      "next": "Next"
+    "image3": {
+      "alt": "Organic Farming",
+      "title": "Organic Cultivation",
+      "description": "Promoting organic farming practices for better yield and sustainability."
     },
-    "modal": {
-      "close": "Close"
+    "image4": {
+      "alt": "Farmer Training",
+      "title": "Farmer Education Program",
+      "description": "Regular training sessions to share modern farming techniques."
     },
-    "images": {
-      "1": {
-        "title": "Premium Sugar Products",
-        "alt": "Sugar Production",
-        "description": "Our refined sugar manufacturing process ensures the highest quality product with optimal taste and purity. Each batch is carefully processed using modern technology while maintaining traditional quality standards.",
-        "category": "Products"
-      },
-      "2": {
-        "title": "Organic Jaggery",
-        "alt": "Jaggery",
-        "description": "Traditional jaggery production methods combined with organic farming practices create a nutrient-rich natural sweetener that preserves all the essential minerals and goodness of sugarcane.",
-        "category": "Products"
-      }
+    "image5": {
+      "alt": "World of Spices",
+      "title": "World Of Spices",
+      "description": "Common spices include cinnamon, black pepper, turmeric, cumin, and cardamom. Each spice has its unique taste."
     }
   },
   "worldMap": {
-    "title": "Global Distribution",
+    "title": {
+      "start": "Global",
+      "highlight": "Distribution"
+    },
+    "description": "We export premium Indian commodities to over 30 countries worldwide. Our robust supply chain ensures timely delivery to all corners of the globe.",
     "subtitle": "We export premium Indian commodities to over 30 countries worldwide. Our robust supply chain ensures timely delivery to all corners of the globe."
   },
   "globe": {
@@ -326,6 +474,11 @@
         "alt": "APEDA"
       }
     }
+  },
+  "certifications": {
+    "title": "Our Certifications",
+    "description": "We maintain the highest standards of quality and safety with international certifications",
+    "viewAll": "View All Certifications"
   },
   "services": {
     "hero": {
@@ -477,109 +630,6 @@
           "Airport-to-airport and door-to-door options"
         ]
       }
-    }
-  },
-  "aboutUs": {
-    "hero": {
-      "tagline": "Global Trade Excellence",
-      "title": "About Us",
-      "subtitle": "Spices specialists for over a decade",
-      "viewProducts": "View Products"
-    },
-    "main": {
-      "sectionTitle": "Who We Are",
-      "title": "About Briskwell International",
-      "paragraph1": "Briskwell International is a dynamic global trading company specializing in the import and export of high-quality goods across various industries. With a strong network of reliable partners and suppliers worldwide, we are committed to delivering excellence, efficiency, and trust in every transaction.",
-      "paragraph2": "Founded with a vision to bridge markets and build global connections, Briskwell International has grown into a trusted name in international trade. Our team brings together deep industry knowledge, logistics expertise, and a passion for seamless global commerce.",
-      "features": {
-        "global": "Global Presence",
-        "partners": "Trusted Partners",
-        "excellence": "Excellence Driven"
-      }
-    },
-    "coreValues": {
-      "title": "Our Core Values",
-      "subtitle": "The principles that guide our journey towards excellence",
-      "values": {
-        "quality": {
-          "title": "Quality Excellence",
-          "description": "Maintaining the highest standards in every product we deliver.",
-          "icon": "🌟"
-        },
-        "sustainability": {
-          "title": "Sustainability",
-          "description": "Committed to environmentally conscious practices.",
-          "icon": "🌱"
-        },
-        "innovation": {
-          "title": "Innovation",
-          "description": "Embracing new technologies and methods.",
-          "icon": "💡"
-        },
-        "integrity": {
-          "title": "Integrity",
-          "description": "Operating with transparency and ethical standards.",
-          "icon": "🤝"
-        }
-      }
-    },
-    "missionVision": {
-      "mission": {
-        "title": "Our Mission",
-        "description": "To deliver premium quality Indian agricultural products to global markets while ensuring sustainable farming practices and fair trade relationships with our farmers."
-      },
-      "vision": {
-        "title": "Our Vision",
-        "description": "To become the most trusted global partner in agricultural exports, known for quality, reliability, and commitment to sustainable development."
-      }
-    },
-    "stats": {
-      "globalPartners": {
-        "number": "50+",
-        "label": "Global Partners"
-      },
-      "countriesServed": {
-        "number": "25+",
-        "label": "Countries Served" 
-      },
-      "monthlyExport": {
-        "number": "1000+",
-        "label": "MT Monthly Export"
-      },
-      "farmerNetworks": {
-        "number": "500+",
-        "label": "Farmer Networks"
-      }
-    },
-    "journey": {
-      "title": "Our Journey",
-      "timeline": [
-        {
-          "year": "2024",
-          "title": "Company Foundation",
-          "description": "Established with a vision to bring premium Indian agricultural products to the global market."
-        },
-        {
-          "year": "2024",
-          "title": "Market Expansion",
-          "description": "Market expansion towards export involves a company growing its business by selling products or services in international markets. It helps increase sales, reach new customers, and reduce dependence on the domestic market.",
-          "achievement": "ISO 9001:2025 Certified"
-        },
-        {
-          "year": "2025",
-          "title": "Product Portfolio Growth",
-          "description": "Added new product categories and strengthened partnerships with local farmers."
-        }
-      ]
-    },
-    "contact": {
-      "title": "Let's Connect",
-      "description": "Ready to explore how we can help grow your business? Get in touch with our team.",
-      "button": "Contact Us"
-    },
-    "imageAlts": {
-      "hero": "Port Operations",
-      "about": "Global Trade Network"
     }
   }
 }
