@@ -13,7 +13,7 @@ export default function Products() {
   // Define product categories
   const categories = [
     { id: "all", label: t("products.filters.all") },
-    { id: "Indian spices", label: t("products.filters.Indian-spices") },
+    { id: "Indian-spices", label: t("products.filters.Indian-spices") },
     { id: "pulses", label: t("products.filters.pulses") },
     // { id: "sugar", label: t('products.filters.sugar') },
     { id: "jaggery", label: t("products.filters.jaggery") },
@@ -56,7 +56,7 @@ export default function Products() {
       title: "Turmeric Finger",
       description:
         "Essential Indian spice known for its vibrant color and medicinal properties. A staple in Indian cuisine.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
     {
       id: 2,
@@ -65,7 +65,7 @@ export default function Products() {
       title: "Turmeric Powder",
       description:
         "Sweet and intensely aromatic pods used in both savory dishes and desserts across Indian cuisine.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
     {
       id: 3,
@@ -74,7 +74,7 @@ export default function Products() {
       title: "Cumin (Jira)",
       description:
         "Aromatic seeds with a distinctive earthy flavor, widely used in Indian cooking for tempering and seasoning.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
 
     {
@@ -84,7 +84,7 @@ export default function Products() {
       title: "Red Chilli",
       description:
         "Red chillies add vibrant color and bold heat to dishes. They are rich in flavor, vitamins, and antioxidants, making them both spicy and healthy.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
 
     {
@@ -94,7 +94,7 @@ export default function Products() {
       title: "Coriander Seeds",
       description:
         "Mildly sweet and citrusy seeds that form the base of many Indian spice blends and curry powders.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
     {
       id: 6,
@@ -103,7 +103,7 @@ export default function Products() {
       title: "Ginger Powder",
       description:
         "Ginger powder offers a warm, spicy flavor perfect for cooking and baking. It’s known for its health benefits, including aiding digestion and reducing inflammation.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
     {
       id: 7,
@@ -112,7 +112,7 @@ export default function Products() {
       title: "Garam Masala",
       description:
         "Complex aromatic spice blend featuring cardamom, cinnamon, cloves, and other warming spices for curries and gravies.",
-      category: "Indian spices",
+      category: "Indian-spices",
     },
     {
       id: 8,
@@ -387,14 +387,14 @@ export default function Products() {
                   </div>
                   {/* Simple product info below image */}
                   <div className="p-4 text-center">
-                    <h3 className="text-lg font-semibold text-spice-primary mb-1">
-                      {product.title}
-                    </h3>
-                    <p className="text-sm text-spice-text/80">
-                      {product.category.charAt(0).toUpperCase() +
-                        product.category.slice(1)}
-                    </p>
-                  </div>
+  <h3 className="product-title">
+    {product.title}
+  </h3>
+  <p className="text-sm text-spice-text/80">
+    {product.category.charAt(0).toUpperCase() +
+      product.category.slice(1)}
+  </p>
+</div>
                 </motion.div>
               ))}
             </AnimatePresence>

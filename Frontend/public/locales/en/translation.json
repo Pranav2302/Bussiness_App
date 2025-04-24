@@ -63,14 +63,15 @@
     },
     "filters": {
       "all": "All Products",
-      "spices": "Indian-spices",
+      "Indian-spices": "Indian Spices",
       "pulses": "Pulses",
       "sugar": "Sugar",
       "jaggery": "Jaggery",
       "rice": "Rice",
       "grains": "Grains",
       "vegetables": "Vegetables",
-      "fruits": "Fruits"
+      "fruits": "Fruits",
+      "feed-material": "Feed Materials"
     },
     "viewAllButton": "View All Products",
     "categories": {

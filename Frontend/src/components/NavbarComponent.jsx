@@ -1,7 +1,7 @@
 import React, { useRef, useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { motion, AnimatePresence } from "framer-motion";
-import LOGO from "../assets/BRISKWELL_INTERNATION.png";
+import LOGO from "../assets/LOGO3.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
 
@@ -60,15 +60,15 @@ export default function NavbarComponent() {
 
   return (
     <header ref={ref} className="fixed inset-x-0 top-0 z-50 w-full">
-      {/* Desktop Navigation - Full width with no side spacing */}
+      {/* Desktop Navigation - Full width with no vertical padding */}
       <div className="w-full bg-white shadow-md">
         <div className="w-full px-6">
-          <div className="hidden lg:flex justify-between items-center h-24">
-            <Link to="/" className="flex items-center z-20 relative">
+          <div className="hidden lg:flex justify-between items-center h-20">
+            <Link to="/" className="flex items-center z-20 relative h-full py-0">
               <img
                 src={LOGO}
                 alt="Briskwell Logo"
-                className="h-14 object-contain"
+                className="h-20 object-contain py-0"
               />
             </Link>
 
@@ -94,13 +94,13 @@ export default function NavbarComponent() {
             </nav>
           </div>
 
-          {/* Mobile Navigation - Full width with minimal side spacing */}
+          {/* Mobile Navigation - Full width with no vertical padding */}
           <div className="flex lg:hidden justify-between items-center h-16">
-            <Link to="/" className="flex items-center">
+            <Link to="/" className="flex items-center h-full py-0">
               <img
                 src={LOGO}
                 alt="Briskwell Logo"
-                className="h-12 object-contain"
+                className="h-25 object-contain py-5"
               />
             </Link>
 
