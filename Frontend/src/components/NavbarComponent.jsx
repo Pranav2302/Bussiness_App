@@ -4,6 +4,7 @@ import { motion, AnimatePresence } from "framer-motion";
 import LOGO from "../assets/LOGO3.png";
 import LanguageSwitcher from "./LanguageSwitcher";
 import { useTranslation } from "react-i18next";
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn, FaWhatsapp } from "react-icons/fa";
 
 // Navigation items
 const NavLinks = React.memo(({ items, location, hovered, setHovered }) => {
@@ -60,6 +61,56 @@ export default function NavbarComponent() {
 
   return (
     <header ref={ref} className="fixed inset-x-0 top-0 z-50 w-full">
+      {/* Two-color Top Info Stripe - Left side navy blue, right side light blue */}
+      <div className="relative bg-gradient-to-r from-blue-900 to-blue-700 text-white py-2 px-6">
+        {/* Decorative accent line */}
+        <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-spice-primary via-yellow-400 to-spice-primary"></div>
+        
+        <div className="container mx-auto">
+          <div className="flex flex-wrap justify-between items-center">
+            {/* Contact Info */}
+            <div className="flex items-center space-x-4 text-sm">
+              <a href="tel:+919922990829" className="flex items-center hover:text-yellow-300 transition-colors">
+                <FaPhone className="mr-1 text-xs text-yellow-300" />
+                <span className="hidden sm:inline text-white">+91 9922990829</span>
+              </a>
+              <a href="mailto:info@briskwellinternational.com" className="flex items-center hover:text-yellow-300 transition-colors">
+                <FaEnvelope className="mr-1 text-xs text-yellow-300" />
+                <span className="hidden sm:inline text-white">info@briskwellinternational.com</span>
+              </a>
+              <div className="hidden md:flex items-center">
+                <FaMapMarkerAlt className="mr-1 text-xs text-yellow-300" />
+                <span className="text-gray-100">A602, Lotus Sanskruti, Malawalenager 2, Kiwale, Pune-412101</span>
+              </div>
+            </div>
+            
+            {/* Social Media Links */}
+            <div className="flex items-center space-x-3">
+              <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-800 hover:bg-blue-600 text-white transition-colors">
+                <FaFacebookF size={14} />
+              </a>
+              <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-800 hover:bg-blue-500 text-white transition-colors">
+                <FaTwitter size={14} />
+              </a>
+              <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-800 hover:bg-pink-600 text-white transition-colors">
+                <FaInstagram size={14} />
+              </a>
+              <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-800 hover:bg-blue-600 text-white transition-colors">
+                <FaLinkedinIn size={14} />
+              </a>
+              <a href="https://wa.me/9922990829" target="_blank" rel="noopener noreferrer" 
+                className="w-7 h-7 flex items-center justify-center rounded-full bg-blue-800 hover:bg-green-600 text-white transition-colors">
+                <FaWhatsapp size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* Desktop Navigation - Full width with no vertical padding */}
       <div className="w-full bg-white shadow-md">
         <div className="w-full px-6">
@@ -171,6 +222,44 @@ export default function NavbarComponent() {
               >
                 {t("navbar.getQuote")}
               </Link>
+              
+              {/* Contact Info for Mobile - with same styling as top stripe */}
+              <div className="mt-4 pt-4 border-t border-gray-200 space-y-2">
+                <a href="tel:+919922990829" className="flex items-center text-blue-900 hover:text-blue-700">
+                  <FaPhone className="mr-2 text-yellow-500" /> +91 9922990829
+                </a>
+                <a href="mailto:info@briskwellinternational.com" className="flex items-center text-blue-900 hover:text-blue-700">
+                  <FaEnvelope className="mr-2 text-yellow-500" /> info@briskwellinternational.com
+                </a>
+                <div className="flex items-center text-blue-900">
+                  <FaMapMarkerAlt className="mr-2 flex-shrink-0 text-yellow-500" /> 
+                  <span>A602, Lotus Sanskruti, bldg 2, Malawalenager 2, Mukai chowk,Ravet- Kiwale, Pune-412101</span>
+                </div>
+                
+                {/* Social Media for Mobile - styled as circular buttons */}
+                <div className="flex items-center space-x-3 pt-2">
+                  <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" 
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-600 text-white">
+                    <FaFacebookF size={14} />
+                  </a>
+                  <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" 
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-500 text-white">
+                    <FaTwitter size={14} />
+                  </a>
+                  <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" 
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900 hover:bg-pink-600 text-white">
+                    <FaInstagram size={14} />
+                  </a>
+                  <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" 
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900 hover:bg-blue-600 text-white">
+                    <FaLinkedinIn size={14} />
+                  </a>
+                  <a href="https://wa.me/9922990829" target="_blank" rel="noopener noreferrer" 
+                    className="w-8 h-8 flex items-center justify-center rounded-full bg-blue-900 hover:bg-green-600 text-white">
+                    <FaWhatsapp size={14} />
+                  </a>
+                </div>
+              </div>
             </div>
           </motion.div>
         )}
