@@ -240,11 +240,6 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-
-
-
-
-
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="space-y-6"
@@ -309,7 +304,7 @@ export default function Home() {
               <div className="relative rounded-2xl overflow-hidden shadow-xl">
                 <div className="absolute inset-0 bg-gradient-to-r from-spice-primary/20 to-transparent"></div>
                 <img
-                  src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744912464/Business_App/ezjrvfh9lnlkni9lei8w.jpg"
+                  src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744912464/Business_App/ezjrvfh9lnlkni9lei8w.jpg"
                   alt="About Briskwell International"
                   className="w-full h-[500px] object-cover"
                 />
@@ -420,7 +415,7 @@ export default function Home() {
                 <div className="p-8 rounded-xl h-full flex flex-col items-center text-center group backdrop-blur-sm">
                   <div className="w-16 h-16 bg-gradient-to-br from-blue-500/20 to-cyan-500/20 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     <img
-                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744978500/Business_App/kcjwy26hr6mwdzizvbee.png"
+                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744978500/Business_App/kcjwy26hr6mwdzizvbee.png"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -447,7 +442,7 @@ export default function Home() {
                 <div className="p-8 rounded-xl h-full flex flex-col items-center text-center group backdrop-blur-sm">
                   <div className="w-16 h-16 bg-gradient-to-br from-emerald-500/20 to-teal-500/20 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     <img
-                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744978709/Business_App/hvzr4j9o4vrgk8hwhrq5.png"
+                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744978709/Business_App/hvzr4j9o4vrgk8hwhrq5.png"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -473,7 +468,7 @@ export default function Home() {
                 <div className="p-8 rounded-xl h-full flex flex-col items-center text-center group backdrop-blur-sm">
                   <div className="w-16 h-16 bg-gradient-to-br from-purple-500/20 to-indigo-500/20 rounded-full flex items-center justify-center mb-6 transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
                     <img
-                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744978806/Business_App/uacunexf38pukgmhwi6e.png"
+                      src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744978806/Business_App/uacunexf38pukgmhwi6e.png"
                       className="w-full h-full object-cover"
                     />
                   </div>
@@ -561,7 +556,7 @@ export default function Home() {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-full rounded-full border-2 border-spice-primary/10 p-4 hover:border-spice-primary/30 transition-all duration-300 overflow-hidden group-hover:scale-105">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744316999/Business_App/ftayaeccvxbc4hj7uyas.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744316999/Business_App/ftayaeccvxbc4hj7uyas.jpg"
                     alt="ISO 9001:2015"
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -573,7 +568,7 @@ export default function Home() {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-full rounded-full border-2 border-spice-primary/10 p-4 hover:border-spice-primary/30 transition-all duration-300 overflow-hidden group-hover:scale-105">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317174/Business_App/rn3pturifgxsxumysaxr.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317174/Business_App/rn3pturifgxsxumysaxr.jpg"
                     alt="HACCP"
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -585,7 +580,7 @@ export default function Home() {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-full rounded-full border-2 border-spice-primary/10 p-4 hover:border-spice-primary/30 transition-all duration-300 overflow-hidden group-hover:scale-105">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317274/Business_App/kjxrnwmj9iq4ofkbrfeu.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317274/Business_App/kjxrnwmj9iq4ofkbrfeu.jpg"
                     alt="GMP"
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -597,7 +592,7 @@ export default function Home() {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-full rounded-full border-2 border-spice-primary/10 p-4 hover:border-spice-primary/30 transition-all duration-300 overflow-hidden group-hover:scale-105">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317372/Business_App/woowp1mlqjrb819q9tuo.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317372/Business_App/woowp1mlqjrb819q9tuo.jpg"
                     alt="FSSAI"
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -609,7 +604,7 @@ export default function Home() {
               <div className="w-32 h-32 md:w-40 md:h-40 rounded-full bg-white shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="relative h-full rounded-full border-2 border-spice-primary/10 p-4 hover:border-spice-primary/30 transition-all duration-300 overflow-hidden group-hover:scale-105">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317689/Business_App/mhqp2csjd1e7tct25k8k.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317689/Business_App/mhqp2csjd1e7tct25k8k.jpg"
                     alt="APEDA"
                     className="w-full h-full object-contain transition-all duration-300"
                   />
