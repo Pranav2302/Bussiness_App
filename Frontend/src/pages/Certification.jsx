@@ -11,7 +11,7 @@ export default function Certification() {
       title: t("certification.certificates.iso.title"),
       description: t("certification.certificates.iso.description"),
       image:
-        "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
+        "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
       additionalInfo: t("certification.certificates.iso.additionalInfo"),
     },
     {
@@ -19,7 +19,7 @@ export default function Certification() {
       title: t("certification.certificates.haccp.title"),
       description: t("certification.certificates.haccp.description"),
       image:
-        "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
+        "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
       additionalInfo: t("certification.certificates.haccp.additionalInfo"),
     },
     {
@@ -27,7 +27,7 @@ export default function Certification() {
       title: t("certification.certificates.gmp.title"),
       description: t("certification.certificates.gmp.description"),
       image:
-        "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
+        "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
       additionalInfo: t("certification.certificates.gmp.additionalInfo"),
     },
     {
@@ -35,7 +35,7 @@ export default function Certification() {
       title: t("certification.certificates.fssai.title"),
       description: t("certification.certificates.fssai.description"),
       image:
-        "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
+        "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745237171/Business_App/lsvrbssc79uehouskd3x.jpg",
       additionalInfo: t("certification.certificates.fssai.additionalInfo"),
     },
   ];
@@ -46,7 +46,7 @@ export default function Certification() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744639795/Business_App/p845aqpjlzzc3ya5adaw.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744639795/Business_App/p845aqpjlzzc3ya5adaw.jpg"
             className="w-full h-full object-cover"
             alt={t("certification.title")}
           />
@@ -90,7 +90,7 @@ export default function Certification() {
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317689/Business_App/mhqp2csjd1e7tct25k8k.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317689/Business_App/mhqp2csjd1e7tct25k8k.jpg"
                     alt={t("certification.certificates.apeda.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -103,7 +103,7 @@ export default function Certification() {
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317174/Business_App/rn3pturifgxsxumysaxr.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317174/Business_App/rn3pturifgxsxumysaxr.jpg"
                     alt={t("certification.certificates.haccp.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -116,7 +116,7 @@ export default function Certification() {
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317372/Business_App/woowp1mlqjrb819q9tuo.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317372/Business_App/woowp1mlqjrb819q9tuo.jpg"
                     alt={t("certification.certificates.fssai.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -129,7 +129,7 @@ export default function Certification() {
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744316999/Business_App/ftayaeccvxbc4hj7uyas.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744316999/Business_App/ftayaeccvxbc4hj7uyas.jpg"
                     alt={t("certification.certificates.iso.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />
@@ -142,7 +142,7 @@ export default function Certification() {
               <div className="w-28 h-28 md:w-32 md:h-32 rounded-lg bg-white shadow-md hover:shadow-lg transition-all duration-300">
                 <div className="relative h-full rounded-lg p-4 hover:bg-blue-50/30 transition-all duration-300 flex items-center justify-center">
                   <img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744317274/Business_App/kjxrnwmj9iq4ofkbrfeu.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744317274/Business_App/kjxrnwmj9iq4ofkbrfeu.jpg"
                     alt={t("certification.certificates.iso.alt")}
                     className="w-full h-full object-contain transition-all duration-300"
                   />

@@ -210,7 +210,7 @@ ${formData.message}
         <section className="relative h-[85vh] overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745489257/Business_App/u5buv6ubp4wielytxjms.jpg"
+              src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745489257/Business_App/u5buv6ubp4wielytxjms.jpg"
               className="w-full h-150 object-cover"
               alt={t("contactUs.title")}
             />

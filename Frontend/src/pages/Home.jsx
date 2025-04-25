@@ -5,21 +5,14 @@ import { useTranslation } from "react-i18next";
 import { Products } from "../components/ProductCarousel";
 import { BusinessDetails } from "./BusinessDetails";
 
-// Import local images from assets folder
-import bgImage1 from "../assets/background/bg1.jpg";
-import bgImage2 from "../assets/background/bg2.jpg";
-import bgImage3 from "../assets/background/bg3.jpg";
-import bgImage4 from "../assets/background/bg4.jpg";
-
 const WorldMapDemo = lazy(() => import("./WorldMap"));
 
-// Cloudinary hero images array
+// Cloudinary hero images array with responsive transformations
 const heroImages = [
-  // Commented photo references
-  bgImage2,
-  bgImage1,
-  bgImage3,
-  bgImage4,
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552060/Business_App/opc8f327f1rjz23m4s4s.jpg",
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552060/Business_App/g3pjgbybjb5rclx0unhi.jpg",
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552061/Business_App/tsgxrnmqgf0fmprzpmjl.jpg",
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552390/Business_App/vusnm7wdp0f5472c1qyz.jpg",
 ];
 
 export default function Home() {
@@ -99,6 +92,7 @@ export default function Home() {
       img.src = src;
     });
   }, []);
+
   return (
     <div className="overflow-x-hidden">
       {/* Hero Section with Enhanced Image Carousel */}
@@ -115,37 +109,22 @@ export default function Home() {
               animate="animate"
               exit="exit"
             >
-              {heroImages[currentHeroImage].includes(".mp4") ? (
-                // Video Background
-                <motion.video
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                  className="absolute inset-0 w-full h-full object-cover"
-                  initial={{ scale: 1.05 }}
-                  animate={{
-                    scale: 1,
-                    transition: { duration: 6, ease: "easeOut" },
-                  }}
-                >
-                  <source src={heroImages[currentHeroImage]} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </motion.video>
-              ) : (
-                // Image Background (for when you uncomment the images)
-                <motion.div
-                  className="absolute inset-0 bg-cover bg-center"
-                  style={{
-                    backgroundImage: `url(${heroImages[currentHeroImage]})`,
-                  }}
-                  initial={{ scale: 1.05 }}
-                  animate={{
-                    scale: 1,
-                    transition: { duration: 6, ease: "easeOut" },
-                  }}
-                />
-              )}
+              <motion.img
+                src={heroImages[currentHeroImage]}
+                alt={`Hero Image ${currentHeroImage + 1}`}
+                className="absolute inset-0 w-full h-full object-cover"
+                loading="lazy"
+                initial={{ scale: 1.05 }}
+                animate={{
+                  scale: 1,
+                  transition: { duration: 6, ease: "easeOut" },
+                }}
+                style={{
+                  width: "100%",
+                  height: "100%",
+                  objectFit: "cover",
+                }}
+              />
               <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent"></div>
             </motion.div>
           </AnimatePresence>
@@ -261,6 +240,11 @@ export default function Home() {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
+
+
+
+
+
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
               className="space-y-6"

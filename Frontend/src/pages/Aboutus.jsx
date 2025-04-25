@@ -102,7 +102,7 @@ const AboutUs = () => {
         {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745387834/Business_App/crodt5wz8jgmbil3wa1m.jpg"
             alt={t("aboutUs.imageAlts.hero")}
             className="w-full h-full object-cover object-center"
           />
@@ -250,7 +250,7 @@ const AboutUs = () => {
                 {/* Main Image Container */}
                 <div className="relative rounded-3xl overflow-hidden shadow-xl">
                   <motion.img
-                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744387838/Business_App/xnsb7uhgjwc3mcwizquy.jpg"
+                    src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744387838/Business_App/xnsb7uhgjwc3mcwizquy.jpg"
                     alt={t("aboutUs.imageAlts.about")}
                     className="w-full h-full object-cover"
                     animate={{

@@ -15,11 +15,9 @@ export default function Products() {
     { id: "all", label: t("products.filters.all") },
     { id: "Indian-spices", label: t("products.filters.Indian-spices") },
     { id: "pulses", label: t("products.filters.pulses") },
-    // { id: "sugar", label: t('products.filters.sugar') },
     { id: "jaggery", label: t("products.filters.jaggery") },
-    // { id: "rice", label: t('products.filters.rice') },
     { id: "grains", label: t("products.filters.grains") },
-    { id: "vegetables", label: t("products.filters.vegetables") },
+    { id: "vegetables", label: t("products.filters.vehicles") },
     { id: "fruits", label: t("products.filters.fruits") },
     { id: "feed-material", label: t("products.filters.feed-material") },
   ];
@@ -47,11 +45,11 @@ export default function Products() {
     }
   }, [location.state]);
 
-  // Product data with all the images
+  // Product data with optimized Cloudinary URLs
   const products = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745317881/Business_App/qs7yq56djxqyq27zcpay.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745317881/Business_App/qs7yq56djxqyq27zcpay.jpg",
       alt: "Turmeric (Haldi)",
       title: "Turmeric Finger",
       description:
@@ -60,7 +58,7 @@ export default function Products() {
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745318295/Business_App/pg5oqy3kzhglha7uzk1e.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318295/Business_App/pg5oqy3kzhglha7uzk1e.jpg",
       alt: "Turmeric Powder",
       title: "Turmeric Powder",
       description:
@@ -69,27 +67,25 @@ export default function Products() {
     },
     {
       id: 3,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744901901/Business_App/bkexgml07eovlikgwoqc.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744901901/Business_App/bkexgml07eovlikgwoqc.jpg",
       alt: "Cumin (Jira)",
       title: "Cumin (Jira)",
       description:
         "Aromatic seeds with a distinctive earthy flavor, widely used in Indian cooking for tempering and seasoning.",
       category: "Indian-spices",
     },
-
     {
       id: 4,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745318489/Business_App/wff323q7cqbif4prwa5o.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318489/Business_App/wff323q7cqbif4prwa5o.jpg",
       alt: "Red Chilli",
       title: "Red Chilli",
       description:
         "Red chillies add vibrant color and bold heat to dishes. They are rich in flavor, vitamins, and antioxidants, making them both spicy and healthy.",
       category: "Indian-spices",
     },
-
     {
       id: 5,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745318718/Business_App/qaabrt5yu3jbgez0ljqw.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318718/Business_App/qaabrt5yu3jbgez0ljqw.jpg",
       alt: "Coriander Seeds",
       title: "Coriander Seeds",
       description:
@@ -98,7 +94,7 @@ export default function Products() {
     },
     {
       id: 6,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745318819/Business_App/hjj788y4bbi0d1tfiw4t.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318819/Business_App/hjj788y4bbi0d1tfiw4t.jpg",
       alt: "Ginger Powder",
       title: "Ginger Powder",
       description:
@@ -107,7 +103,7 @@ export default function Products() {
     },
     {
       id: 7,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744900957/Business_App/ho0xsgmlhjfunywrzfku.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744900957/Business_App/ho0xsgmlhjfunywrzfku.jpg",
       alt: "Garam Masala",
       title: "Garam Masala",
       description:
@@ -116,7 +112,7 @@ export default function Products() {
     },
     {
       id: 8,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387420/Business_App/gykdmtdgvc8rpzgo2jwp.png",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745387420/Business_App/gykdmtdgvc8rpzgo2jwp.png",
       alt: "Rapeseed Meal",
       title: "Rapeseed Meal",
       description:
@@ -125,7 +121,7 @@ export default function Products() {
     },
     {
       id: 9,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745386240/Business_App/todktvzrkmbznrl3s3lr.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745386240/Business_App/todktvzrkmbznrl3s3lr.jpg",
       alt: "Fish Meal",
       title: "Fish Meal",
       description:
@@ -134,7 +130,7 @@ export default function Products() {
     },
     {
       id: 10,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393939/Business_App/jnjgh2gdsti9fwt6c8sf.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393939/Business_App/jnjgh2gdsti9fwt6c8sf.jpg",
       alt: "Pomegranate",
       title: "Pomegranate",
       description:
@@ -143,7 +139,7 @@ export default function Products() {
     },
     {
       id: 11,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
       alt: "Sugar",
       title: "Premium Sugar",
       description:
@@ -152,7 +148,7 @@ export default function Products() {
     },
     {
       id: 12,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745319391/Business_App/dmt8szwxlhj4pxg5kghr.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319391/Business_App/dmt8szwxlhj4pxg5kghr.jpg",
       alt: "Jaggery",
       title: "Organic Jaggery",
       description:
@@ -161,7 +157,7 @@ export default function Products() {
     },
     {
       id: 13,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745319483/Business_App/yoy46ozgpzjie37opu95.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319483/Business_App/yoy46ozgpzjie37opu95.jpg",
       alt: "Rice",
       title: "Premium Rice",
       description:
@@ -170,7 +166,7 @@ export default function Products() {
     },
     {
       id: 14,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745322749/Business_App/r4x4tq8axtgt9qixgfdr.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745322749/Business_App/r4x4tq8axtgt9qixgfdr.jpg",
       alt: "Mug Dal",
       title: " Mug Dal",
       description:
@@ -179,7 +175,7 @@ export default function Products() {
     },
     {
       id: 15,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745322932/Business_App/xfyjae9kgdp6pnymktne.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745322932/Business_App/xfyjae9kgdp6pnymktne.jpg",
       alt: "Tur Dal",
       title: "Tur Dal",
       description:
@@ -188,7 +184,7 @@ export default function Products() {
     },
     {
       id: 16,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303070/Business_App/if7fmackdd34uy6guyys.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/if7fmackdd34uy6guyys.jpg",
       alt: "Vegetables",
       title: "Fresh Vegetables",
       description:
@@ -197,7 +193,7 @@ export default function Products() {
     },
     {
       id: 17,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303070/Business_App/rnoohbyhkfxfy7ipinen.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/rnoohbyhkfxfy7ipinen.jpg",
       alt: "Fruits",
       title: "Exotic Fruits",
       description:
@@ -206,7 +202,7 @@ export default function Products() {
     },
     {
       id: 18,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745387223/Business_App/sz7ts8cwrvspkgpkdr58.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745387223/Business_App/sz7ts8cwrvspkgpkdr58.jpg",
       alt: "Soya DOC",
       title: "Soya DOC",
       description:
@@ -215,7 +211,7 @@ export default function Products() {
     },
     {
       id: 19,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323698/Business_App/zdjdbq7lxhg8j1sfq8te.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745323698/Business_App/zdjdbq7lxhg8j1sfq8te.jpg",
       alt: "Jowar",
       title: "Jowar Millet",
       description:
@@ -224,7 +220,7 @@ export default function Products() {
     },
     {
       id: 20,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393728/Business_App/umgxua9cfofvwptpclzm.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393728/Business_App/umgxua9cfofvwptpclzm.jpg",
       alt: "Masoor Dal",
       title: "Masoor Dal",
       description:
@@ -233,7 +229,7 @@ export default function Products() {
     },
     {
       id: 21,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745393807/Business_App/g8gnc61vojlotk7h5fyw.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393807/Business_App/g8gnc61vojlotk7h5fyw.jpg",
       alt: "Onion",
       title: "Onions",
       description:
@@ -242,7 +238,7 @@ export default function Products() {
     },
     {
       id: 22,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745323579/Business_App/ikso0bvnxr2bx0auctz8.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745323579/Business_App/ikso0bvnxr2bx0auctz8.jpg",
       alt: "Bajra",
       title: "Bajra Millet",
       description:
@@ -251,7 +247,7 @@ export default function Products() {
     },
     {
       id: 23,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745384513/Business_App/mammqavo8qvtcoi3g4kx.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745384513/Business_App/mammqavo8qvtcoi3g4kx.jpg",
       alt: "Egg Shell Powder",
       title: "Egg Shell Powder",
       description:
@@ -285,7 +281,7 @@ export default function Products() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url(https://res.cloudinary.com/doxrnqdwn/image/upload/v1744895641/Business_App/pyck6lqskz5iomjjkmzp.jpg)`,
+            backgroundImage: `url(https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744895641/Business_App/pyck6lqskz5iomjjkmzp.jpg)`,
             // transform: `translateY(${parallaxValue}px)`,
           }}
         />
@@ -383,18 +379,19 @@ export default function Products() {
                       src={product.src}
                       alt={product.alt}
                       className="w-full h-full object-cover rounded-t-xl transition-transform duration-500 group-hover:scale-105"
+                      loading="lazy"
                     />
                   </div>
                   {/* Simple product info below image */}
                   <div className="p-4 text-center">
-  <h3 className="product-title">
-    {product.title}
-  </h3>
-  <p className="text-sm text-spice-text/80">
-    {product.category.charAt(0).toUpperCase() +
-      product.category.slice(1)}
-  </p>
-</div>
+                    <h3 className="product-title">
+                      {product.title}
+                    </h3>
+                    <p className="text-sm text-spice-text/80">
+                      {product.category.charAt(0).toUpperCase() +
+                        product.category.slice(1)}
+                    </p>
+                  </div>
                 </motion.div>
               ))}
             </AnimatePresence>
@@ -459,6 +456,7 @@ export default function Products() {
                     src={selectedProduct.src}
                     alt={selectedProduct.alt}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                 </div>
 

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useNavigate } from "react-router-dom";
-import { useTranslation } from "react-i18next"; // Ensure you import this
+import { useTranslation } from "react-i18next";
 
 // Import icons for the animated gallery
 const IconArrowLeft = () => (
@@ -126,6 +126,7 @@ const AnimatedFeatureService = ({ services, autoplay = false }) => {
                     alt={service.title}
                     className="h-full w-full rounded-3xl object-cover object-center shadow-lg"
                     draggable={false}
+                    loading="lazy"
                   />
                 </motion.div>
               ))}
@@ -180,12 +181,11 @@ const AnimatedFeatureService = ({ services, autoplay = false }) => {
                   }}
                   className="inline-block"
                 >
-                  {word}&nbsp;
+                  {word} 
                 </motion.span>
               ))}
             </motion.p>
           </motion.div>
-
           <div className="flex gap-4 pt-12 md:pt-0">
             <button
               onClick={handlePrev}
@@ -233,7 +233,7 @@ export default function Services() {
   const featuredServices = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
       alt: "Freight Forwarding",
       title: "Freight Forwarding Solutions",
       category: "Global Logistics",
@@ -243,7 +243,7 @@ export default function Services() {
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg", 
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg", 
       alt: "Customs Clearance",
       title: "Customs Clearance Expertise",
       category: "Import/Export",
@@ -253,7 +253,7 @@ export default function Services() {
     },
     {
       id: 3,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
       alt: "Sea Export",
       title: "Sea Export & Import",
       category: "Ocean Freight",
@@ -263,7 +263,7 @@ export default function Services() {
     },
     {
       id: 4,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745128768/Business_App/uvwysq4okj1meu423zar.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128768/Business_App/uvwysq4okj1meu423zar.jpg",
       alt: "Air Freight",
       title: "Air Export & Import",
       category: "Air Freight",
@@ -277,7 +277,7 @@ export default function Services() {
   const serviceOfferings = [
     {
       id: 1,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
       alt: "Freight Forwarding",
       title: "Freight Forwarding",
       description:
@@ -294,7 +294,7 @@ export default function Services() {
     },
     {
       id: 2,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg",
       alt: "Customs Clearance",
       title: "Customs Clearance",
       description:
@@ -312,7 +312,7 @@ export default function Services() {
     },
     {
       id: 3,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745143033/Business_App/dc5y2ufvwnch55huxkb8.jpg", // Replace with your Cloudinary URL
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745143033/Business_App/dc5y2ufvwnch55huxkb8.jpg",
       alt: "Export Import Consultation",
       title: "Export Import Consultation",
       description:
@@ -329,7 +329,7 @@ export default function Services() {
     },
     {
       id: 4,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129224/Business_App/systt7jxckvyfewgjry9.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129224/Business_App/systt7jxckvyfewgjry9.jpg",
       alt: "International Parcel",
       title: "International Parcel",
       description:
@@ -346,7 +346,7 @@ export default function Services() {
     },
     {
       id: 5,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
       alt: "Sea Export/Import",
       title: "Sea Export/Import (FCL/LCL)",
       description:
@@ -364,7 +364,7 @@ export default function Services() {
     },
     {
       id: 6,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745150060/Business_App/l0ksnmgqoomj0swxvfqe.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745150060/Business_App/l0ksnmgqoomj0swxvfqe.jpg",
       alt: "Air Export/Import",
       title: "Air Export/Import",
       description:
@@ -396,9 +396,10 @@ export default function Services() {
       <section className="relative h-[80vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1494412651409-8963ce7935a7" // Replace with your Cloudinary URL
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745553638/Business_App/uw3zj4i1h3zb45fn0wu4.jpg"
             className="w-full h-full object-cover object-center"
             alt="Logistics Services"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gradient-to-r from-black/80 to-transparent " />
         </div>
@@ -443,7 +444,7 @@ export default function Services() {
               <a
                 href="#services"
                 className="px-8 py-3 bg-blue-600 rounded-md hover:bg-blue-700 transition-all hover:-translate-y-1 duration-300 shadow-md"
-                style={{ color: "white" }} // pure black
+                style={{ color: "white" }}
               >
                 {t("services.hero.exploreButton")}
               </a>
@@ -451,7 +452,7 @@ export default function Services() {
               <a
                 href="#contact"
                 className="px-8 py-3 bg-white/10 backdrop-blur-sm text-  rounded-md hover:bg-white/20 transition-all hover:-translate-y-1 duration-300"
-                style={{ color: "white" }} // pure black
+                style={{ color: "white" }}
               >
                 {t("services.hero.quoteButton")}
               </a>
@@ -639,6 +640,7 @@ export default function Services() {
                     src={service.src}
                     alt={service.alt}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                    loading="lazy"
                   />
 
                   {/* Enhanced Overlay with Focus Effect */}
@@ -732,6 +734,7 @@ export default function Services() {
                       src={selectedService.src}
                       alt={selectedService.alt}
                       className="w-full h-full object-cover"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-r from-black/50 to-transparent md:bg-gradient-to-t md:from-black/50 md:to-transparent" />
                     <div className="absolute top-4 right-4 md:top-auto md:bottom-4 md:right-4">
