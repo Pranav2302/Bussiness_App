@@ -140,13 +140,17 @@ export default function Footer() {
 
             <div className="space-y-1">
               <div>
-                <h4 className="font-semibold mb-2">{t("footer.contactInfo.office.label")}</h4>
+                <h4 className="font-semibold mb-2">
+                  {t("footer.contactInfo.office.label")}
+                </h4>
                 <p className="text-black/90 leading-relaxed">
                   {t("footer.contactInfo.office.address")}
                 </p>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">{t("footer.contactInfo.quote.label")}</h4>
+                <h4 className="font-semibold mb-2">
+                  {t("footer.contactInfo.quote.label")}
+                </h4>
                 <a
                   href="tel:+919922990829"
                   className="block text-white/90 hover:text-spice-secondary transition-colors"
@@ -155,7 +159,9 @@ export default function Footer() {
                 </a>
               </div>
               <div>
-                <h4 className="font-semibold mb-2">{t("footer.contactInfo.email.label")}</h4>
+                <h4 className="font-semibold mb-2">
+                  {t("footer.contactInfo.email.label")}
+                </h4>
                 <a
                   href="mailto:info@briskwellinternational.com"
                   className="block text-white/90 hover:text-spice-secondary transition-colors mb-1"
@@ -191,7 +197,7 @@ export default function Footer() {
             </div>
           </div>
         </div>
-        
+
         {/* Copyright section */}
         <div className="mt-12 border-t border-spice-secondary/30 pt-8 font-body">
           <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
@@ -204,10 +210,12 @@ export default function Footer() {
               <p className="text-sm text-black/60">
                 {t("footer.developer")}{" "}
                 <a className="text-spice-secondary hover:text-spice-primary transition-colors">
-                  Prajwal Korade-Pranav Kamble
+                  {/* Prajwal Korade-Pranav Kamble */}
                 </a>{" "}
                 <span className="px-2">|</span>
-                <span className="text-black/60">{t("footer.developerInitials")}</span>
+                <span className="text-black/60">
+                  {t("footer.developerInitials")}
+                </span>
               </p>
             </div>
           </div>
