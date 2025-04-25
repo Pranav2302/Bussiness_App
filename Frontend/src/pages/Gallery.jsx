@@ -14,7 +14,7 @@ const Gallery = () => {
 const galleryImages = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745234896/Business_App/fgwfyycfr5tdx1kg2qlh.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234896/Business_App/fgwfyycfr5tdx1kg2qlh.jpg",
     alt: t("gallery.image1.alt"), // "Farmers in Field"
     title: t("gallery.image1.title"), // "Our Farming Partners"
     description: t("gallery.image1.description"), // "Working closely with local farmers to ensure sustainable agricultural practices."
@@ -22,7 +22,7 @@ const galleryImages = [
   },
   {
     id: 2,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745234885/Business_App/komxqhoaxvyo8ad07xrb.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234885/Business_App/komxqhoaxvyo8ad07xrb.jpg",
     alt: t("gallery.image2.alt"), // "Harvesting Process"
     title: t("gallery.image2.title"), // "Harvest Season"
     description: t("gallery.image2.description"), // "Farmers harvesting crops using traditional and modern methods."
@@ -30,7 +30,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745234884/Business_App/cfhb9ffo3vpaqyrrhalp.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234884/Business_App/cfhb9ffo3vpaqyrrhalp.jpg",
     alt: t("gallery.image3.alt"), // "Organic Farming"
     title: t("gallery.image3.title"), // "Organic Cultivation"
     description: t("gallery.image3.description"), // "Promoting organic farming practices for better yield and sustainability."
@@ -38,7 +38,7 @@ const galleryImages = [
   },
   {
     id: 4,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745234884/Business_App/wprvo8mjv0pmxbcwet3c.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234884/Business_App/wprvo8mjv0pmxbcwet3c.jpg",
     alt: t("gallery.image4.alt"), // "Farmer Training"
     title: t("gallery.image4.title"), // "Farmer Education Program"
     description: t("gallery.image4.description"), // "Regular training sessions to share modern farming techniques."
@@ -46,7 +46,7 @@ const galleryImages = [
   },
   {
     id: 5,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745235158/Business_App/dofsxe03fxf3gbbtynx5.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745235158/Business_App/dofsxe03fxf3gbbtynx5.jpg",
     alt: t("gallery.image5.alt"), // "Farmer Training"
     title: t("gallery.image5.title"), // "World Of Spices"
     description: t("gallery.image5.description"), // "Common spices include cinnamon, black pepper, turmeric, cumin, and cardamom. Each spice has its unique taste."
@@ -66,7 +66,7 @@ const galleryImages = [
       <section className="relative h-[75vh] overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://res.cloudinary.com/doxrnqdwn/image/upload/v1744972460/Business_App/yodt9st9oag7hdabcxs4.jpg"
+            src="https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744972460/Business_App/yodt9st9oag7hdabcxs4.jpg"
             alt="Gallery Hero"
             className="w-full h-full object-cover"
           />
