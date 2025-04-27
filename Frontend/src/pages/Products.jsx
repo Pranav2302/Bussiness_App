@@ -156,29 +156,17 @@ export default function Products() {
       category: "fruits",
     },
     {
-<<<<<<< HEAD
-      id: 13,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
-      alt: "Sugar",
-      title: "Premium Sugar",
-=======
       id: 11,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556481/Business_App/fusbasiyiqfl4ckd9htl.jpg",
       alt: "Jaggery",
       title: "Jaggery Powder",
->>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       description:
         "High-quality refined and raw sugar available in various grades for commercial use.",
       category: "jaggery",
     },
     {
-<<<<<<< HEAD
-      id: 14,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319391/Business_App/dmt8szwxlhj4pxg5kghr.jpg",
-=======
       id: 12,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556268/Business_App/ni7ceklx9oigk2s5p5t8.jpg",
->>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       alt: "Jaggery",
       title: "Organic Jaggery",
       description:
@@ -186,13 +174,8 @@ export default function Products() {
       category: "jaggery",
     },
     {
-<<<<<<< HEAD
-      id: 15,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319483/Business_App/yoy46ozgpzjie37opu95.jpg",
-=======
       id: 13,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556648/Business_App/nsjl0aooozegu1c7p3nn.jpg",
->>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       alt: "Rice",
       title: "Premium Rice",
       description:
