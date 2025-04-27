@@ -13,7 +13,7 @@ export function Products() {
       // title: t("products.carousel.spices"),
       // button: t("products.carousel.view"),
       button: "View details",
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745471626/Business_App/cggr2xbzycionjitpzbk.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745471626/Business_App/cggr2xbzycionjitpzbk.jpg",
       category: "Indian-spices",
     },
 
@@ -22,7 +22,7 @@ export function Products() {
       button: "View details",
       // title: t("products.carousel.feed"),
       // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745472107/Business_App/jee3u9uk23oej3aia4dl.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745472107/Business_App/jee3u9uk23oej3aia4dl.jpg",
       category: "pulses",
     },
     {
@@ -30,7 +30,7 @@ export function Products() {
       button: "View details",
       // title: t("products.carousel.feed"),
       // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745473364/Business_App/wyrabeglzez1aftklfej.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745473364/Business_App/wyrabeglzez1aftklfej.jpg",
       category: "fruits",
     },
     {
@@ -38,16 +38,16 @@ export function Products() {
       button: "View details",
       // title: t("products.carousel.jaggery"),
       // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745473949/Business_App/osruhszwvk92sx8omjpf.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745473949/Business_App/osruhszwvk92sx8omjpf.jpg",
       category: "feed-material",
     },
 
     {
-      title: "Sugar",
+      title: "Organic Jaggery",
       button: "View details",
       //   title: t("products.carousel.rice"),
       //   button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556268/Business_App/ni7ceklx9oigk2s5p5t8.jpg",
       category: "jaggery",
     },
 
@@ -56,7 +56,7 @@ export function Products() {
       button: "View details",
       // title: t("products.carousel.rice"),
       // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745474051/Business_App/rjgjfhvsv45kdzwm7cjm.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745474051/Business_App/rjgjfhvsv45kdzwm7cjm.jpg",
       category: "grains",
     },
     {
@@ -64,15 +64,13 @@ export function Products() {
       button: "View details",
       // title: t("products.carousel.rice"),
       // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303070/Business_App/if7fmackdd34uy6guyys.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/if7fmackdd34uy6guyys.jpg",
       category: "vegetables",
     },
     {
       title: "Exotic Fruits",
       button: "View details",
-      // title: t("products.carousel.rice"),
-      // button: t("products.carousel.view"),
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1744303070/Business_App/rnoohbyhkfxfy7ipinen.jpg",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/rnoohbyhkfxfy7ipinen.jpg",
       category: "fruits",
     },
   ];

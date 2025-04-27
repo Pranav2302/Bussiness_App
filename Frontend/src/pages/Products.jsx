@@ -76,18 +76,18 @@ export default function Products() {
     },
     {
       id: 4,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318489/Business_App/wff323q7cqbif4prwa5o.jpg",
-      alt: "Red Chilli",
-      title: "Red Chilli",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552485/Business_App/fdy1pix7kr3x1vb1tkdb.jpg",
+      alt: "Red Chilli Powder",
+      title: "Red Chilli Powder",
       description:
         "Red chillies add vibrant color and bold heat to dishes. They are rich in flavor, vitamins, and antioxidants, making them both spicy and healthy.",
       category: "Indian-spices",
     },
     {
       id: 5,
-      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745318718/Business_App/qaabrt5yu3jbgez0ljqw.jpg",
-      alt: "Coriander Seeds",
-      title: "Coriander Seeds",
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552592/Business_App/l0ag1loxfninmpjyzggw.jpg",
+      alt: "Coriander Powder",
+      title: "Coriander Powder",
       description:
         "Mildly sweet and citrusy seeds that form the base of many Indian spice blends and curry powders.",
       category: "Indian-spices",
@@ -156,17 +156,29 @@ export default function Products() {
       category: "fruits",
     },
     {
+<<<<<<< HEAD
       id: 13,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
       alt: "Sugar",
       title: "Premium Sugar",
+=======
+      id: 11,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556481/Business_App/fusbasiyiqfl4ckd9htl.jpg",
+      alt: "Jaggery",
+      title: "Jaggery Powder",
+>>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       description:
         "High-quality refined and raw sugar available in various grades for commercial use.",
       category: "jaggery",
     },
     {
+<<<<<<< HEAD
       id: 14,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319391/Business_App/dmt8szwxlhj4pxg5kghr.jpg",
+=======
+      id: 12,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556268/Business_App/ni7ceklx9oigk2s5p5t8.jpg",
+>>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       alt: "Jaggery",
       title: "Organic Jaggery",
       description:
@@ -174,8 +186,13 @@ export default function Products() {
       category: "jaggery",
     },
     {
+<<<<<<< HEAD
       id: 15,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319483/Business_App/yoy46ozgpzjie37opu95.jpg",
+=======
+      id: 13,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556648/Business_App/nsjl0aooozegu1c7p3nn.jpg",
+>>>>>>> 93a9ecab739d5fb8249d0ca3f065dac641f24926
       alt: "Rice",
       title: "Premium Rice",
       description:
@@ -186,7 +203,7 @@ export default function Products() {
       id: 16,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745322749/Business_App/r4x4tq8axtgt9qixgfdr.jpg",
       alt: "Mug Dal",
-      title: " Mug Dal",
+      title: " Moong Dal",
       description:
         "High-quality pulses packaged in convenient cups for easy cooking and storage.",
       category: "pulses",
@@ -270,6 +287,15 @@ export default function Products() {
       title: "Egg Shell Powder",
       description:
         "Egg Shell Powder is a natural, calcium-rich powder made from finely ground eggshells. It’s used as a dietary supplement, plant fertilizer, and ingredient in DIY health and beauty products.",
+      category: "feed-material",
+    },
+    {
+      id: 24,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745558305/Business_App/c37velpll64nhkbeyqap.jpg",
+      alt: "Poultry feed",
+      title: "Poultry feed",
+      description:
+        "Poultry feed is a specially formulated food for birds like chickens, ducks, and turkeys. It provides essential nutrients—proteins, vitamins, minerals, and energy—to support growth, egg production, and o",
       category: "feed-material",
     },
   ];
@@ -402,9 +428,7 @@ export default function Products() {
                   </div>
                   {/* Simple product info below image */}
                   <div className="p-4 text-center">
-                    <h3 className="product-title">
-                      {product.title}
-                    </h3>
+                    <h3 className="product-title">{product.title}</h3>
                     <p className="text-sm text-spice-text/80">
                       {product.category.charAt(0).toUpperCase() +
                         product.category.slice(1)}
