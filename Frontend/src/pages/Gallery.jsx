@@ -14,7 +14,7 @@ const Gallery = () => {
 const galleryImages = [
   {
     id: 1,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234896/Business_App/fgwfyycfr5tdx1kg2qlh.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745739817/Business_App/fup4vq96cjucdh7gajga.jpg",
     alt: t("gallery.image1.alt"), // "Farmers in Field"
     title: t("gallery.image1.title"), // "Our Farming Partners"
     description: t("gallery.image1.description"), // "Working closely with local farmers to ensure sustainable agricultural practices."
@@ -30,7 +30,7 @@ const galleryImages = [
   },
   {
     id: 3,
-    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745234884/Business_App/cfhb9ffo3vpaqyrrhalp.jpg",
+    src: "https://res.cloudinary.com/doxrnqdwn/image/upload/v1745740137/Business_App/xapve1fg0irdmvfoqq7r.png",
     alt: t("gallery.image3.alt"), // "Organic Farming"
     title: t("gallery.image3.title"), // "Organic Cultivation"
     description: t("gallery.image3.description"), // "Promoting organic farming practices for better yield and sustainability."

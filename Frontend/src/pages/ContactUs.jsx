@@ -472,16 +472,25 @@ ${formData.message}
               </div>
 
               <div>
-                <h3 className="text-lg font-medium contact-us-heading mb-2">
-                  {t("contactUs.info.emailTitle")}
-                </h3>
-                <a
-                  href={`mailto:${t("contactUs.info.emailAddress")}`}
-                  className="text-spice-primary hover:text-spice-secondary transition-colors"
-                >
-                  {t("contactUs.info.emailAddress")}
-                </a>
-              </div>
+  <h3 className="text-lg font-medium contact-us-heading mb-2">
+    {t("contactUs.info.emailTitle")}
+  </h3>
+  <div className="flex flex-col gap-2">
+    <a
+      href={`mailto:${t("contactUs.info.emailAddress1")}`}
+      className="text-spice-primary hover:text-spice-secondary transition-colors"
+    >
+      {t("contactUs.info.emailAddress1")}
+    </a>
+    <a
+      href={`mailto:${t("contactUs.info.emailAddress2")}`}
+      className="text-spice-primary hover:text-spice-secondary transition-colors"
+    >
+      {t("contactUs.info.emailAddress2")}
+    </a>
+  </div>
+</div>
+
 
               <div>
                 <h3 className="text-lg font-medium contact-us-heading mb-2">

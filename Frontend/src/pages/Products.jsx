@@ -17,7 +17,7 @@ export default function Products() {
     { id: "pulses", label: t("products.filters.pulses") },
     { id: "jaggery", label: t("products.filters.jaggery") },
     { id: "grains", label: t("products.filters.grains") },
-    { id: "vegetables", label: t("products.filters.vehicles") },
+    { id: "vegetables", label: t("products.filters.vegetables") },
     { id: "fruits", label: t("products.filters.fruits") },
     { id: "feed-material", label: t("products.filters.feed-material") },
   ];
