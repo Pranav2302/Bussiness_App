@@ -112,6 +112,24 @@ export default function Products() {
     },
     {
       id: 8,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745736860/Business_App/hlinr63pqtr9qkbhoihj.jpg",
+      alt: "White Pepper",
+      title: "White Pepper",
+      description:
+        "Milder than black pepper, white pepper offers a sharp, earthy heat perfect for light-colored dishes like soups, sauces, and marinades.",
+      category: "Indian-spices",
+    },
+    {
+      id: 9,
+      src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745736122/Business_App/th5qdycsmi0ehrh9922j.jpg",
+      alt: "Black Pepper",
+      title: "Black Pepper",
+      description:
+        "Pungent and bold, black pepper adds a strong, spicy flavor and aroma, commonly used in seasoning and spice blends around the world.",
+      category: "Indian-spices",
+    },
+    {
+      id: 10,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745387420/Business_App/gykdmtdgvc8rpzgo2jwp.png",
       alt: "Rapeseed Meal",
       title: "Rapeseed Meal",
@@ -120,7 +138,7 @@ export default function Products() {
       category: "feed-material",
     },
     {
-      id: 9,
+      id: 11,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745386240/Business_App/todktvzrkmbznrl3s3lr.jpg",
       alt: "Fish Meal",
       title: "Fish Meal",
@@ -129,7 +147,7 @@ export default function Products() {
       category: "feed-material",
     },
     {
-      id: 10,
+      id: 12,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393939/Business_App/jnjgh2gdsti9fwt6c8sf.jpg",
       alt: "Pomegranate",
       title: "Pomegranate",
@@ -138,7 +156,7 @@ export default function Products() {
       category: "fruits",
     },
     {
-      id: 11,
+      id: 13,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319254/Business_App/mmzk976d325c0jz5jydl.jpg",
       alt: "Sugar",
       title: "Premium Sugar",
@@ -147,7 +165,7 @@ export default function Products() {
       category: "jaggery",
     },
     {
-      id: 12,
+      id: 14,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319391/Business_App/dmt8szwxlhj4pxg5kghr.jpg",
       alt: "Jaggery",
       title: "Organic Jaggery",
@@ -156,7 +174,7 @@ export default function Products() {
       category: "jaggery",
     },
     {
-      id: 13,
+      id: 15,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745319483/Business_App/yoy46ozgpzjie37opu95.jpg",
       alt: "Rice",
       title: "Premium Rice",
@@ -165,7 +183,7 @@ export default function Products() {
       category: "grains",
     },
     {
-      id: 14,
+      id: 16,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745322749/Business_App/r4x4tq8axtgt9qixgfdr.jpg",
       alt: "Mug Dal",
       title: " Mug Dal",
@@ -174,7 +192,7 @@ export default function Products() {
       category: "pulses",
     },
     {
-      id: 15,
+      id: 17,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745322932/Business_App/xfyjae9kgdp6pnymktne.jpg",
       alt: "Tur Dal",
       title: "Tur Dal",
@@ -183,7 +201,7 @@ export default function Products() {
       category: "pulses",
     },
     {
-      id: 16,
+      id: 18,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/if7fmackdd34uy6guyys.jpg",
       alt: "Vegetables",
       title: "Fresh Vegetables",
@@ -192,7 +210,7 @@ export default function Products() {
       category: "vegetables",
     },
     {
-      id: 17,
+      id: 19,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1744303070/Business_App/rnoohbyhkfxfy7ipinen.jpg",
       alt: "Fruits",
       title: "Exotic Fruits",
@@ -201,7 +219,7 @@ export default function Products() {
       category: "fruits",
     },
     {
-      id: 18,
+      id: 20,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745387223/Business_App/sz7ts8cwrvspkgpkdr58.jpg",
       alt: "Soya DOC",
       title: "Soya DOC",
@@ -210,7 +228,7 @@ export default function Products() {
       category: "feed-material",
     },
     {
-      id: 19,
+      id: 21,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745323698/Business_App/zdjdbq7lxhg8j1sfq8te.jpg",
       alt: "Jowar",
       title: "Jowar Millet",
@@ -219,7 +237,7 @@ export default function Products() {
       category: "grains",
     },
     {
-      id: 20,
+      id: 22,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393728/Business_App/umgxua9cfofvwptpclzm.jpg",
       alt: "Masoor Dal",
       title: "Masoor Dal",
@@ -228,7 +246,7 @@ export default function Products() {
       category: "pulses",
     },
     {
-      id: 21,
+      id: 22,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745393807/Business_App/g8gnc61vojlotk7h5fyw.jpg",
       alt: "Onion",
       title: "Onions",
@@ -237,7 +255,7 @@ export default function Products() {
       category: "vegetables",
     },
     {
-      id: 22,
+      id: 23,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745323579/Business_App/ikso0bvnxr2bx0auctz8.jpg",
       alt: "Bajra",
       title: "Bajra Millet",
@@ -246,7 +264,7 @@ export default function Products() {
       category: "grains",
     },
     {
-      id: 23,
+      id: 24,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745384513/Business_App/mammqavo8qvtcoi3g4kx.jpg",
       alt: "Egg Shell Powder",
       title: "Egg Shell Powder",
