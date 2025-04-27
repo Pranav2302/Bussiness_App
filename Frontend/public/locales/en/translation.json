@@ -520,6 +520,146 @@
         "description": "Strategic guidance on international trade regulations, market entry strategies, and optimization of your global supply chain."
       }
     },
+    "featuredServices": [
+      {
+        "id": 1,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
+        "alt": "Freight Forwarding",
+        "title": "Freight Forwarding Solutions",
+        "category": "Global Logistics",
+        "description": "Our comprehensive freight forwarding services ensure your cargo reaches its destination efficiently and cost-effectively. With our extensive global network, we handle all aspects of your shipping needs from pickup to delivery, providing real-time tracking and customs documentation.",
+        "featured": true
+      },
+      {
+        "id": 2,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg",
+        "alt": "Customs Clearance",
+        "title": "Customs Clearance Expertise",
+        "category": "Import/Export",
+        "description": "Navigate the complexities of international trade with our expert customs clearance services. Our team of licensed customs brokers ensures compliance with all regulations, handles documentation, and manages tariff classifications to facilitate smooth border crossings for your goods.",
+        "featured": true
+      },
+      {
+        "id": 3,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
+        "alt": "Sea Export",
+        "title": "Sea Export & Import",
+        "category": "Ocean Freight",
+        "description": "Whether you need full container load (FCL) or less than container load (LCL) shipping solutions, our sea freight services connect you to major ports worldwide. We optimize routes, manage carrier relationships, and ensure competitive rates for your ocean logistics needs.",
+        "featured": true
+      },
+      {
+        "id": 4,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128768/Business_App/uvwysq4okj1meu423zar.jpg",
+        "alt": "Air Freight",
+        "title": "Air Export & Import",
+        "category": "Air Freight",
+        "description": "When time is of the essence, our air freight services provide expedited shipping solutions to and from destinations worldwide. We work with major airlines to secure cargo space, manage special handling requirements, and ensure your time-sensitive shipments arrive on schedule.",
+        "featured": true
+      }
+    ],
+    "serviceOfferings": [
+      {
+        "id": 1,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745489962/Business_App/heenlhnulqzhoxuuvosc.jpg",
+        "alt": "Freight Forwarding",
+        "title": "Freight Forwarding",
+        "description": "End-to-end logistics solutions for your global shipping needs, with dedicated route optimization, carrier selection, and comprehensive cargo management.",
+        "icon": "🚢",
+        "category": "Sea Freight",
+        "details": [
+          "Door-to-door delivery coordination",
+          "Carrier negotiation and booking",
+          "Route optimization and planning",
+          "Cargo insurance arrangements",
+          "Electronic tracking and visibility"
+        ]
+      },
+      {
+        "id": 2,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745128928/Business_App/trdcq6p0ezuyrxbvho0t.jpg",
+        "alt": "Customs Clearance",
+        "title": "Customs Clearance",
+        "description": "Expert handling of all customs documentation and regulatory compliance to ensure smooth border crossings and prevent costly delays.",
+        "icon": "📝",
+        "category": "Customs",
+        "details": [
+          "Customs documentation preparation",
+          "Tariff classification assistance",
+          "Regulatory compliance management",
+          "Duty and tax calculation",
+          "Customs bond facilitation"
+        ],
+        "tall": true
+      },
+      {
+        "id": 3,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745143033/Business_App/dc5y2ufvwnch55huxkb8.jpg",
+        "alt": "Export Import Consultation",
+        "title": "Export Import Consultation",
+        "description": "Strategic guidance on international trade regulations, market entry strategies, and optimization of your global supply chain.",
+        "icon": "💼",
+        "category": "Consulting",
+        "details": [
+          "Trade compliance assessments",
+          "Import/export license guidance",
+          "Market entry strategy development",
+          "Supply chain optimization",
+          "Trade agreement benefits analysis"
+        ]
+      },
+      {
+        "id": 4,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129224/Business_App/systt7jxckvyfewgjry9.jpg",
+        "alt": "International Parcel",
+        "title": "International Parcel",
+        "description": "Reliable and cost-effective solutions for smaller shipments and parcels with global tracking capabilities and express options.",
+        "icon": "📦",
+        "category": "Air Freight",
+        "details": [
+          "Express and standard delivery options",
+          "Packaging guidelines and solutions",
+          "International tracking systems",
+          "Last-mile delivery coordination",
+          "Returns management"
+        ]
+      },
+      {
+        "id": 5,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745129228/Business_App/cox1m6pyuls6ph5puu9v.jpg",
+        "alt": "Sea Export/Import",
+        "title": "Sea Export/Import (FCL/LCL)",
+        "description": "Comprehensive ocean freight services for both full container loads (FCL) and less than container loads (LCL) to destinations worldwide.",
+        "icon": "🚢",
+        "category": "Sea Freight",
+        "details": [
+          "FCL and LCL shipping solutions",
+          "Container management and tracking",
+          "Port-to-port and door-to-door options",
+          "Specialized equipment for oversized cargo",
+          "Transshipment coordination"
+        ],
+        "featured": true
+      },
+      {
+        "id": 6,
+        "src": "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745150060/Business_App/l0ksnmgqoomj0swxvfqe.jpg",
+        "alt": "Air Export/Import",
+        "title": "Air Export/Import",
+        "description": "Fast and reliable air freight solutions for time-sensitive cargo with flexible scheduling and specialized handling capabilities.",
+        "icon": "✈️",
+        "category": "Air Freight",
+        "details": [
+          "Express and consolidated air freight",
+          "Charter services for urgent shipments",
+          "Temperature-controlled transport",
+          "Dangerous goods handling",
+          "Airport-to-airport and door-to-door options"
+        ],
+        "tall": true
+      }
+    ]
+  },
     "featured": {
       "title": "Our Featured Services",
       "items": {
@@ -632,5 +772,5 @@
         ]
       }
     }
+    
   }
-}

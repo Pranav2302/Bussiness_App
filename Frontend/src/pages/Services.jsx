@@ -485,85 +485,85 @@ export default function Services() {
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.1 }}
-            >
-              <ServiceCard
-                icon="🚢"
-                title={t("services.serviceCards.seaExportImport.title")}
-                description={t("services.serviceCards.seaExportImport.description")}
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.1 }}
+  >
+    <ServiceCard
+      icon="🚢"
+      title={t("services.serviceCards.seaExportImport.title")}
+      description={t("services.serviceCards.seaExportImport.description")}
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.2 }}
-            >
-              <ServiceCard
-                icon="✈️"
-                title="Air Export/Import"
-                description="Expedited air freight solutions for time-sensitive cargo with flexible scheduling options and specialized handling capabilities."
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.2 }}
+  >
+    <ServiceCard
+      icon="✈️"
+      title={t("services.serviceCards.airExportImport.title")}
+      description={t("services.serviceCards.airExportImport.description")}
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.3 }}
-            >
-              <ServiceCard
-                icon="📝"
-                title="Customs Clearance"
-                description="Expert handling of all customs documentation and regulatory compliance to ensure smooth border crossings and prevent delays."
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.3 }}
+  >
+    <ServiceCard
+      icon="📝"
+      title={t("services.serviceCards.customsClearance.title")}
+      description={t("services.serviceCards.customsClearance.description")}
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.4 }}
-            >
-              <ServiceCard
-                icon="🚚"
-                title="Freight Forwarding"
-                description="End-to-end logistics solutions with route optimization, carrier selection, and comprehensive cargo management services."
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.4 }}
+  >
+    <ServiceCard
+      icon="🚚"
+      title={t("services.serviceCards.freightForwarding.title")}
+      description={t("services.serviceCards.freightForwarding.description")}
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.5 }}
-            >
-              <ServiceCard
-                icon="📦"
-                title="International Parcel"
-                description="Reliable and cost-effective solutions for smaller shipments and parcels with global tracking capabilities and express options."
-              />
-            </motion.div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.5 }}
+  >
+    <ServiceCard
+      icon="📦"
+      title={t("services.serviceCards.internationalParcel.title")}
+      description={t("services.serviceCards.internationalParcel.description")}
+    />
+  </motion.div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: 0.6 }}
-            >
-              <ServiceCard
-                icon="💼"
-                title="Export Import Consultation"
-                description="Strategic guidance on international trade regulations, market entry strategies, and optimization of your global supply chain."
-              />
-            </motion.div>
-          </div>
-        </div>
+  <motion.div
+    initial={{ opacity: 0, y: 20 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{ delay: 0.6 }}
+  >
+    <ServiceCard
+      icon="💼"
+      title={t("services.serviceCards.exportImportConsultation.title")}
+      description={t("services.serviceCards.exportImportConsultation.description")}
+    />
+  </motion.div>
+</div>
+</div>
       </section>
 
       {/* Featured Services Section */}
