@@ -25,8 +25,8 @@ const allowedOrigins = [
   'http://localhost:5000',          // Local development frontend
   'http://localhost:5173',           // Vite default dev server
 ];
-  
-// Secure CORS configuration  cheking 
+    
+// Secure CORS configuration  cheking  testing
 app.use(cors({
   origin: function (origin, callback) {
     // Allow requests with no origin (like mobile apps, curl requests)
