@@ -2,7 +2,7 @@
 const config = {
   // API Configuration
   api: {
-    url: import.meta.env.VITE_API_URL || 'http://localhost:5000',
+    url: import.meta.env.VITE_API_URL ,
   },
   
   // Business Information
