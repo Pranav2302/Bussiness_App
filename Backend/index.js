@@ -20,10 +20,10 @@ app.use(express.json());
 
 // Configure CORS with specific allowed origins
 const allowedOrigins = [
- // 'https://briskwell.com',          // Production frontend
-  //'https://www.briskwell.com',      // www subdomain
+  'https://www.briskwellinternational.com',          // Production frontend
+  'https://briskwellinternational.vercel.app',      // www subdomain
   'http://localhost:5000',          // Local development frontend
-  'http://localhost:5173'           // Vite default dev server
+  'http://localhost:5173',           // Vite default dev server
 ];
 
 // Secure CORS configuration
