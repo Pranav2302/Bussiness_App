@@ -151,6 +151,13 @@ app.post('/sendemail', emailLimiter, async (req, res) => {
 });
 
 // Server startup
-app.listen(Port, () => {
-    console.log(`Server is running on http://localhost:${Port}`);
+const isProduction = process.env.NODE_ENV === 'production';
+const hostName = isProduction ? '0.0.0.0' : 'localhost';
+
+app.listen(Port, hostName, () => {
+    if (isProduction) {
+        console.log(`Server is running in production mode on port ${Port}`);
+    } else {
+        console.log(`Server is running at http://localhost:${Port}`);
+    }
 });
