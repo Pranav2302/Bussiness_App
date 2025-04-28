@@ -158,8 +158,8 @@ export default function Products() {
     {
       id: 11,
       src: "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745556481/Business_App/fusbasiyiqfl4ckd9htl.jpg",
-      alt: "Jaggery",
-      title: "Jaggery Powder",
+      alt: "Organic Jaggery Powder",
+      title: "Organic Jaggery Powder",
       description:
         "High-quality refined and raw sugar available in various grades for commercial use.",
       category: "jaggery",
