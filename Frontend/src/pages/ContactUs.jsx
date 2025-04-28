@@ -149,16 +149,22 @@ ${formData.message}
     } catch (error) {
       console.error("Error sending email:", error);
 
-      // Add detailed error logging
+      // More detailed error logging
       if (error.response) {
-        console.error("Server error:", error.response.data);
-        console.error("Status code:", error.response.status);
+        console.error("Server response data:", error.response.data);
+        console.error("Server response status:", error.response.status);
+        console.error("Server response headers:", error.response.headers);
       } else if (error.request) {
-        console.error("No response received. Check CORS or network.");
+        console.error("No response received:", error.request);
+        console.error("Request config:", error.config);
+      } else {
+        console.error("Error setting up request:", error.message);
       }
 
-      const errorMsg =
-      error.response?.data?.message || t("contactUs.form.error");
+      const errorMsg = error.response?.data?.message || 
+                       (error.request ? "Network error - no response received" : 
+                       "Error sending email. Please try again later.");
+      
       setSubmitStatus({
         success: false,
         message: errorMsg,
