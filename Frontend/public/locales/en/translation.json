@@ -207,9 +207,11 @@
       "fruits": "Exotic Fruits",
       "wheat": "Premium Wheat",
       "jowar": "Jowar Millet",
-      "mango": "Premium Mangoes",
+      "mango": "Premium Mangoes", 
       "jaggery": "Organic Jaggery",
-      "rice": "Basmati Rice"
+      "rice": "Basmati Rice",
+      "cotton-yarn" : "Cotton Yarn"
+      
     },
     "filters": {
       "all": "All Products",
@@ -221,7 +223,8 @@
       "grains": "Grains",
       "vegetables": "Vegetables",
       "fruits": "Fruits",
-      "feed-material": "Feed Materials"
+      "feed-material": "Feed Materials",
+      "cotton-yarn" : "Cotton Yarn"
     },
     "viewAllButton": "View All Products",
     "categories": {
@@ -709,7 +712,8 @@
       "title": "Ready to Simplify Your Global Logistics?",
       "description": "Get in touch with our team of experts to discuss your specific requirements and receive a customized logistics solution.",
       "requestQuote": "Request a Quote",
-      "contactSales": "Contact Sales Team"
+      "contactSales": "Contact Sales Team",
+       "button": "Contact Us Today"
     },
     "serviceDetails": {
       "freightForwarding": {

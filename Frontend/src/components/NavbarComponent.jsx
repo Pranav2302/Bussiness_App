@@ -14,7 +14,7 @@ const NavLinks = React.memo(({ items, location, hovered, setHovered }) => {
       to={item.link}
       onMouseEnter={() => setHovered(idx)}
       onMouseLeave={() => setHovered(null)}
-      className={`relative px-4 py-2 font-body font-medium transition-all duration-300 ${
+      className={`relative px-3 py-2 font-body font-medium transition-all duration-300 ${
         location.pathname === item.link
           ? "text-black font-semibold border-2 border-spice-primary rounded-md"
           : "text-black hover:text-black"

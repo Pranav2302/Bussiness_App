@@ -12,9 +12,10 @@ const heroImages = [
   "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745736580/Business_App/mdqdzaw3kea8xyobs3hj.jpg",
   "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552060/Business_App/g3pjgbybjb5rclx0unhi.jpg",
   "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552061/Business_App/tsgxrnmqgf0fmprzpmjl.jpg",
-  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745552390/Business_App/vusnm7wdp0f5472c1qyz.jpg",
   "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745598623/Business_App/kohg4skdbmjtt8bfkhh1.jpg",
   "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745599200/Business_App/exfmwsfe8ne8sceypoqn.jpg",
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745833783/Business_App/plcxxqxeckv6rxqpmp9z.jpg",
+  "https://res.cloudinary.com/doxrnqdwn/image/upload/w_auto,dpr_auto,q_auto,f_auto/v1745907412/Business_App/imsibfudzvzedjr2rrto.jpg",
 ];
 
 export default function Home() {

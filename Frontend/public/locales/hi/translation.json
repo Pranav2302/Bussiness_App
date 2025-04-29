@@ -209,7 +209,8 @@
       "jowar": "ज्वार बाजरा",
       "mango": "प्रीमियम आम",
       "jaggery": "जैविक गुड़",
-      "rice": "बासमती चावल"
+      "rice": "बासमती चावल",
+      "cotton-yarn": "कपास धागा"
     },
     "filters": {
       "all": "सभी उत्पाद",
@@ -221,7 +222,8 @@
       "grains": "अनाज",
       "vegetables": "सब्जियां",
       "fruits": "फल",
-      "feed-material": "फीड सामग्री"
+      "feed-material": "फीड सामग्री",
+      "cotton-yarn": "कपास धागा"
     },
     "viewAllButton": "सभी उत्पाद देखें",
     "categories": {
