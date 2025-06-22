@@ -7,13 +7,13 @@ import LOGO from "../assets/Logo.png";
 export default function ContactUs() {
   const { t } = useTranslation();
   
-  // Formspree hook
+
   const [state, handleSubmit] = useForm("meokrqwd");
   
-  // Add loading state for page loading animation
+
   const [loading, setLoading] = useState(true);
 
-  // Effect to simulate loading time
+
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
@@ -22,7 +22,7 @@ export default function ContactUs() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Form state for controlled inputs
+  // Form state 
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -34,11 +34,11 @@ export default function ContactUs() {
   // UI states
   const [showCustomInquiry, setShowCustomInquiry] = useState(false);
 
-  // Handle input changes
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     
-    // Handle the special case for inquiry type dropdown
+   
     if (name === "inquiryType") {
       setShowCustomInquiry(value === "Other");
     }
@@ -49,14 +49,13 @@ export default function ContactUs() {
     }));
   };
 
-  // Handle form submission with Formspree
+ 
   const onSubmit = async (e) => {
     e.preventDefault();
     
-    // Create FormData object for Formspree
+    
     const formDataForSubmission = new FormData(e.target);
     
-    // Add the inquiry type (either selected or custom)
     const inquirySubject = formData.inquiryType === "Other" 
       ? formData.customInquiry 
       : formData.inquiryType;
@@ -64,11 +63,11 @@ export default function ContactUs() {
     formDataForSubmission.append('subject', `New Inquiry: ${inquirySubject}`);
     formDataForSubmission.append('inquiry_type', inquirySubject);
     
-    // Submit to Formspree
+   
     await handleSubmit(formDataForSubmission);
   };
 
-  // Reset form after successful submission
+  
   useEffect(() => {
     if (state.succeeded) {
       setFormData({
