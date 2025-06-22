@@ -1,12 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import axios from "axios";
+import { useForm, ValidationError } from '@formspree/react';
 import { useTranslation } from "react-i18next";
-import config from "../../src/config";
 import LOGO from "../assets/Logo.png";
 
 export default function ContactUs() {
   const { t } = useTranslation();
+  
+  // Formspree hook
+  const [state, handleSubmit] = useForm("meokkobn");
   
   // Add loading state for page loading animation
   const [loading, setLoading] = useState(true);
@@ -20,7 +22,7 @@ export default function ContactUs() {
     return () => clearTimeout(timer);
   }, []);
 
-  // Form state
+  // Form state for controlled inputs
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -31,14 +33,11 @@ export default function ContactUs() {
 
   // UI states
   const [showCustomInquiry, setShowCustomInquiry] = useState(false);
-  const [formErrors, setFormErrors] = useState({});
-  const [isSubmitting, setIsSubmitting] = useState(false);
-  const [submitStatus, setSubmitStatus] = useState(null);
 
   // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-
+    
     // Handle the special case for inquiry type dropdown
     if (name === "inquiryType") {
       setShowCustomInquiry(value === "Other");
@@ -48,95 +47,30 @@ export default function ContactUs() {
       ...prev,
       [name]: value,
     }));
-
-    // Clear error for this field when user starts typing again
-    if (formErrors[name]) {
-      setFormErrors((prev) => ({
-        ...prev,
-        [name]: "",
-      }));
-    }
   };
 
-  // Validate form
-  const validateForm = () => {
-    const errors = {};
-
-    // Name validation
-    if (!formData.name.trim()) {
-      errors.name = t("contactUs.form.nameError");
-    }
-
-    // Email validation with regex
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!formData.email.trim()) {
-      errors.email = t("contactUs.form.emailError");
-    } else if (!emailRegex.test(formData.email)) {
-      errors.email = t("contactUs.form.emailError");
-    }
-
-    // Inquiry type validation
-    if (!formData.inquiryType) {
-      errors.inquiryType = t("contactUs.form.inquiryTypeError");
-    }
-
-    // Custom inquiry validation (only if "Other" is selected)
-    if (formData.inquiryType === "Other" && !formData.customInquiry.trim()) {
-      errors.customInquiry = t("contactUs.form.customInquiryError");
-    }
-
-    // Message validation
-    if (!formData.message.trim()) {
-      errors.message = t("contactUs.form.messageError");
-    } else if (formData.message.trim().length < 10) {
-      errors.message = t("contactUs.form.messageError");
-    }
-
-    setFormErrors(errors);
-    return Object.keys(errors).length === 0;
-  };
-
-  const handleSubmit = async (e) => {
+  // Handle form submission with Formspree
+  const onSubmit = async (e) => {
     e.preventDefault();
+    
+    // Create FormData object for Formspree
+    const formDataForSubmission = new FormData(e.target);
+    
+    // Add the inquiry type (either selected or custom)
+    const inquirySubject = formData.inquiryType === "Other" 
+      ? formData.customInquiry 
+      : formData.inquiryType;
+    
+    formDataForSubmission.append('subject', `New Inquiry: ${inquirySubject}`);
+    formDataForSubmission.append('inquiry_type', inquirySubject);
+    
+    // Submit to Formspree
+    await handleSubmit(formDataForSubmission);
+  };
 
-    // Validate form
-    if (!validateForm()) {
-      return;
-    }
-
-    setIsSubmitting(true);
-    setSubmitStatus(null);
-
-    // Prepare email content
-    const inquirySubject =
-      formData.inquiryType === "Other"
-        ? formData.customInquiry
-        : formData.inquiryType;
-
-    const emailContent = {
-      name: formData.name,
-      email: formData.email,
-      subject: `New Inquiry: ${inquirySubject}`,
-      text: `
-Name: ${formData.name}
-Email: ${formData.email}
-Inquiry Type: ${inquirySubject}
-
-Message:
-${formData.message}
-      `,
-    };
-
-    try {
-      const apiUrl = import.meta.env.VITE_API_URL;
-      const response = await axios.post(`${apiUrl}/sendemail`, emailContent);
-
-      setSubmitStatus({
-        success: true,
-        message: t("contactUs.form.success"),
-      });
-
-      // Reset form
+  // Reset form after successful submission
+  useEffect(() => {
+    if (state.succeeded) {
       setFormData({
         name: "",
         email: "",
@@ -145,33 +79,8 @@ ${formData.message}
         message: "",
       });
       setShowCustomInquiry(false);
-    } catch (error) {
-      console.error("Error sending email:", error);
-
-      // More detailed error logging
-      if (error.response) {
-        console.error("Server response data:", error.response.data);
-        console.error("Server response status:", error.response.status);
-        console.error("Server response headers:", error.response.headers);
-      } else if (error.request) {
-        console.error("No response received:", error.request);
-        console.error("Request config:", error.config);
-      } else {
-        console.error("Error setting up request:", error.message);
-      }
-
-      const errorMsg = error.response?.data?.message || 
-                       (error.request ? "Network error - no response received" : 
-                       "Error sending email. Please try again later.");
-      
-      setSubmitStatus({
-        success: false,
-        message: errorMsg,
-      });
-    } finally {
-      setIsSubmitting(false);
     }
-  };
+  }, [state.succeeded]);
 
   return (
     <>
@@ -212,6 +121,7 @@ ${formData.message}
       </AnimatePresence>
 
       <div className="min-h-screen overflow-hidden"> 
+        {/* Hero Section */}
         <section className="relative h-[85vh] overflow-hidden">
           <div className="absolute inset-0">
             <img
@@ -232,6 +142,7 @@ ${formData.message}
               <motion.h1
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: 0.2 }}
                 className="text-5xl md:text-8xl font-bold text-white mb-6"
               >
                 {t("contactUs.title")}
@@ -249,21 +160,29 @@ ${formData.message}
               {t("contactUs.form.title")}
             </h2>
 
-            {submitStatus && (
+            {/* Success Message */}
+            {state.succeeded && (
               <motion.div
                 initial={{ opacity: 0, y: -10 }}
                 animate={{ opacity: 1, y: 0 }}
-                className={`p-4 rounded-md mb-6 ${
-                  submitStatus.success
-                    ? "bg-green-50 text-green-700"
-                    : "bg-red-50 text-red-700"
-                }`}
+                className="p-4 rounded-md mb-6 bg-green-50 text-green-700"
               >
-                {submitStatus.message}
+                {t("contactUs.form.success") || "Thanks for your message! We'll get back to you soon."}
               </motion.div>
             )}
 
-            <form className="space-y-6" onSubmit={handleSubmit}>
+            {/* Error Message */}
+            {state.errors && state.errors.length > 0 && (
+              <motion.div
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                className="p-4 rounded-md mb-6 bg-red-50 text-red-700"
+              >
+                There was an error submitting your form. Please try again.
+              </motion.div>
+            )}
+
+            <form className="space-y-6" onSubmit={onSubmit}>
               <div>
                 <label
                   htmlFor="name"
@@ -278,14 +197,15 @@ ${formData.message}
                   name="name"
                   value={formData.name}
                   onChange={handleChange}
-                  className={`w-full bg-white border ${
-                    formErrors.name ? "border-red-500" : "border-spice-border"
-                  } rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text`}
+                  required
+                  className="w-full bg-white border border-spice-border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text"
                   placeholder={t("contactUs.form.namePlaceholder")}
                 />
-                {formErrors.name && (
-                  <p className="text-sm text-red-500 mt-1">{formErrors.name}</p>
-                )}
+                <ValidationError 
+                  prefix="Name" 
+                  field="name"
+                  errors={state.errors}
+                />
               </div>
 
               <div>
@@ -302,14 +222,15 @@ ${formData.message}
                   name="email"
                   value={formData.email}
                   onChange={handleChange}
-                  className={`w-full bg-white border ${
-                    formErrors.email ? "border-red-500" : "border-spice-border"
-                  } rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text`}
+                  required
+                  className="w-full bg-white border border-spice-border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text"
                   placeholder={t("contactUs.form.emailPlaceholder")}
                 />
-                {formErrors.email && (
-                  <p className="text-sm text-red-500 mt-1">{formErrors.email}</p>
-                )}
+                <ValidationError 
+                  prefix="Email" 
+                  field="email"
+                  errors={state.errors}
+                />
               </div>
 
               <div>
@@ -325,11 +246,8 @@ ${formData.message}
                   name="inquiryType"
                   value={formData.inquiryType}
                   onChange={handleChange}
-                  className={`w-full bg-white border ${
-                    formErrors.inquiryType
-                      ? "border-red-500"
-                      : "border-spice-border"
-                  } rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text`}
+                  required
+                  className="w-full bg-white border border-spice-border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text"
                 >
                   <option value="">
                     {t("contactUs.form.inquiryTypePlaceholder")}
@@ -355,8 +273,6 @@ ${formData.message}
                   <option value="Shipping & Logistics">
                     {t("contactUs.form.inquiryTypes.shipping")}
                   </option>
-
-                  {/* New logistics services options with translation keys */}
                   <option value="Freight Forwarding">
                     {t("contactUs.form.inquiryTypes.freightForwarding")}
                   </option>
@@ -375,16 +291,15 @@ ${formData.message}
                   <option value="Air Export/Import">
                     {t("contactUs.form.inquiryTypes.airExportImport")}
                   </option>
-
                   <option value="Other">
                     {t("contactUs.form.inquiryTypes.other")}
                   </option>
                 </select>
-                {formErrors.inquiryType && (
-                  <p className="text-sm text-red-500 mt-1">
-                    {formErrors.inquiryType}
-                  </p>
-                )}
+                <ValidationError 
+                  prefix="Inquiry Type" 
+                  field="inquiryType"
+                  errors={state.errors}
+                />
               </div>
 
               {showCustomInquiry && (
@@ -406,18 +321,15 @@ ${formData.message}
                     name="customInquiry"
                     value={formData.customInquiry}
                     onChange={handleChange}
-                    className={`w-full bg-white border ${
-                      formErrors.customInquiry
-                        ? "border-red-500"
-                        : "border-spice-border"
-                    } rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text`}
+                    required={showCustomInquiry}
+                    className="w-full bg-white border border-spice-border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text"
                     placeholder={t("contactUs.form.customInquiryPlaceholder")}
                   />
-                  {formErrors.customInquiry && (
-                    <p className="text-sm text-red-500 mt-1">
-                      {formErrors.customInquiry}
-                    </p>
-                  )}
+                  <ValidationError 
+                    prefix="Custom Inquiry" 
+                    field="customInquiry"
+                    errors={state.errors}
+                  />
                 </motion.div>
               )}
 
@@ -435,26 +347,25 @@ ${formData.message}
                   rows={6}
                   value={formData.message}
                   onChange={handleChange}
-                  className={`w-full bg-white border ${
-                    formErrors.message ? "border-red-500" : "border-spice-border"
-                  } rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text`}
+                  required
+                  className="w-full bg-white border border-spice-border rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-spice-accent text-spice-text"
                   placeholder={t("contactUs.form.messagePlaceholder")}
                 />
-                {formErrors.message && (
-                  <p className="text-sm text-red-500 mt-1">
-                    {formErrors.message}
-                  </p>
-                )}
+                <ValidationError 
+                  prefix="Message" 
+                  field="message"
+                  errors={state.errors}
+                />
               </div>
 
               <button
                 type="submit"
-                disabled={isSubmitting}
+                disabled={state.submitting}
                 className="w-full px-4 py-3 blue-gradient rounded-md text-white font-medium hover:-translate-y-1 transition-all duration-200 shadow-blue-glow disabled:opacity-70 disabled:cursor-not-allowed disabled:transform-none"
               >
-                {isSubmitting
-                  ? t("contactUs.form.sending")
-                  : t("contactUs.form.sendButton")}
+                {state.submitting
+                  ? t("contactUs.form.sending") || "Sending..."
+                  : t("contactUs.form.sendButton") || "Send Message"}
               </button>
             </form>
           </div>
@@ -477,25 +388,24 @@ ${formData.message}
               </div>
 
               <div>
-  <h3 className="text-lg font-medium contact-us-heading mb-2">
-    {t("contactUs.info.emailTitle")}
-  </h3>
-  <div className="flex flex-col gap-2">
-    <a
-      href={`mailto:${t("contactUs.info.emailAddress1")}`}
-      className="text-spice-primary hover:text-spice-secondary transition-colors"
-    >
-      {t("contactUs.info.emailAddress1")}
-    </a>
-    <a
-      href={`mailto:${t("contactUs.info.emailAddress2")}`}
-      className="text-spice-primary hover:text-spice-secondary transition-colors"
-    >
-      {t("contactUs.info.emailAddress2")}
-    </a>
-  </div>
-</div>
-
+                <h3 className="text-lg font-medium contact-us-heading mb-2">
+                  {t("contactUs.info.emailTitle")}
+                </h3>
+                <div className="flex flex-col gap-2">
+                  <a
+                    href={`mailto:${t("contactUs.info.emailAddress1")}`}
+                    className="text-spice-primary hover:text-spice-secondary transition-colors"
+                  >
+                    {t("contactUs.info.emailAddress1")}
+                  </a>
+                  <a
+                    href={`mailto:${t("contactUs.info.emailAddress2")}`}
+                    className="text-spice-primary hover:text-spice-secondary transition-colors"
+                  >
+                    {t("contactUs.info.emailAddress2")}
+                  </a>
+                </div>
+              </div>
 
               <div>
                 <h3 className="text-lg font-medium contact-us-heading mb-2">
@@ -572,7 +482,7 @@ ${formData.message}
                     >
                       <path
                         fillRule="evenodd"
-                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858-.182-.466-.398-.8-.748-1.15-.35-.35-.683-.566-1.15-.748-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"
+                        d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427C2.013 15.056 2 14.716 2 12v-.08c0-2.643.013-2.987.06-4.043.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.944 2.013 9.284 2 12 2zm0 5.838a4.162 4.162 0 100 8.324 4.162 4.162 0 000-8.324zM12 14a2 2 0 110-4 2 2 0 010 4zm4.406-4.845a.973.973 0 100-1.946.973.973 0 000 1.946z"
                         clipRule="evenodd"
                       />
                     </svg>
@@ -591,6 +501,7 @@ ${formData.message}
                       <path
                         fillRule="evenodd"
                         d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                        clipRule="evenodd"
                       />
                     </svg>
                   </a>
